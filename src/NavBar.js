@@ -1,18 +1,48 @@
 import React, { Component } from 'react';
 import { Menu,Icon } from 'semantic-ui-react';
 import { Link, withRouter } from 'react-router-dom';
+import styled from 'styled-components'
 
+
+const StyledMenu = styled(Menu.Menu)`
+  background-color: rgba(0,0,0,.5) !important;
+  border: 1px solid #555 !important;
+  border-left: 0 !important;
+  border-right: 0 !important;
+  position: absolute !important;
+  border-radius: none !important;
+  width: 100%;
+`
+
+const StyledUL = styled.ul`
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: flex-end;
+  color: white;
+  text-transform: uppercase;
+  font-size: 16px;
+  font-weight: 700;
+  color: #fff;
+  padding: 30px 20px;
+  display: block;
+  text-decoration: none;
+  cursor: pointer;
+  letter-spacing: 3px;
+`
 
 class NavBar extends Component {
 
 
+
 render() {
   return  (
-    <Menu.Menu position="center">
+    <StyledMenu fixed={'top'}>
     <header class="header-scrolled">
    <div>
     <nav>
-      <ul>
+      <StyledUL>
         <li>
           <Link to="/">
                 Home
@@ -23,12 +53,12 @@ render() {
             Events
           </Link>
         </li>
-      </ul>
+      </StyledUL>
     </nav>
     </div>
     </header>
 
-      </Menu.Menu>
+      </StyledMenu>
   );
   }
 }

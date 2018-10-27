@@ -8,7 +8,9 @@ import NavBar from './NavBar';
 const App = () => (
   <div>
     <NavBar />
-    <Route exact path="/" component={Home} />
+    <div style={{paddingTop: '120px'}}>
+      <Route exact path="/" component={Home} />
+    </div>
   </div>
 );
 
