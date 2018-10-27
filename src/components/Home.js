@@ -2,11 +2,9 @@ import React, { Component } from 'react';
 import { Container, 
   Grid, 
   Segment, 
-  Button,
-  Form,
-  Image 
+  Image
 } from 'semantic-ui-react'
-
+import machu from '../images/machu.JPG'
 
 const styles = {
  
@@ -19,7 +17,7 @@ class Home extends React.Component {
 <div style={styles.backgroundStyle} >
     <Container className='pageprofile'>
     <div className='cencenter'>
-    {/* <Image src={this.props.user.image} size='small' circular /> */}
+    <Image src={machu} size='large' circular />
       <h3>Ben Pohl</h3>
       <h5>pohl989@gmail.com</h5>
       </div>
