@@ -5,6 +5,9 @@ import { Container,
   Image
 } from 'semantic-ui-react'
 import machu from '../images/machu.JPG'
+import logo from '../images/Pohl989_logo.png'
+import Header from '../styledComponents/Header.js'
+
 
 const styles = {
  
@@ -18,11 +21,11 @@ class Home extends React.Component {
     <Container className='pageprofile'>
     <div className='cencenter'>
     <Image src={machu} size='large' circular />
+    <Image src={logo} size='large' />
     <Image src={machu} size='large' circular />
     <Image src={machu} size='large' circular />
     <Image src={machu} size='large' circular />
-    <Image src={machu} size='large' circular />
-      <h3>Ben Pohl</h3>
+      <Header as="h1">Ben Pohl</Header>
       <h5>pohl989@gmail.com</h5>
       </div>
       <Grid columns={3} >

@@ -1,8 +1,8 @@
 import React, { Component } from 'react';
-// import { Menu,Icon } from 'semantic-ui-react';
+import { Image } from 'semantic-ui-react';
 import { Link, withRouter } from 'react-router-dom';
 import styled from 'styled-components'
-
+import logo from './images/Pohl989_logo.png'
 
 const StyledMenu = styled.nav`
   background-color: rgba(0,0,0,.5) !important;
@@ -49,6 +49,12 @@ render() {
   return  (
     <StyledMenu fixed={'top'}>
       <StyledUL>
+      
+        <StyledLi style={{padding: '0px', marginBottom: '10px'}}>
+          <Link to="/">
+            <Image src={logo} size='tiny' />
+          </Link>  
+        </StyledLi>
         <StyledLi>
           <Link to="/">
                 Home
