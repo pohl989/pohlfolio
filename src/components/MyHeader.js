@@ -11,14 +11,8 @@ const styles = {
 }
 
 const Welcome = styled.div`
-  position: static;
-  top: 0;
-  left: 0;
-  bottom: 0;
-  right: 0;
-  overflow: auto;
-  background: lime;
-  height: 100%`
+
+height:100vh`
 
 class MyHeader extends React.Component {
 
@@ -29,7 +23,7 @@ class MyHeader extends React.Component {
     <Welcome>
     <div className='cencenter'>
       <h3>Ben Pohl</h3>
-      <h5>pohl989@gmail.com</h5>
+      <h5 style={{color: 'white'}}>pohl989@gmail.com</h5>
       <h5>pohl989@gmail.com</h5>
       <h5>pohl989@gmail.com</h5>
       <h5>pohl989@gmail.com</h5>

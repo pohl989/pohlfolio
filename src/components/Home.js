@@ -18,6 +18,10 @@ class Home extends React.Component {
     <Container className='pageprofile'>
     <div className='cencenter'>
     <Image src={machu} size='large' circular />
+    <Image src={machu} size='large' circular />
+    <Image src={machu} size='large' circular />
+    <Image src={machu} size='large' circular />
+    <Image src={machu} size='large' circular />
       <h3>Ben Pohl</h3>
       <h5>pohl989@gmail.com</h5>
       </div>
