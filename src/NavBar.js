@@ -1,10 +1,10 @@
 import React, { Component } from 'react';
-import { Menu,Icon } from 'semantic-ui-react';
+// import { Menu,Icon } from 'semantic-ui-react';
 import { Link, withRouter } from 'react-router-dom';
 import styled from 'styled-components'
 
 
-const StyledMenu = styled(Menu.Menu)`
+const StyledMenu = styled.nav`
   background-color: rgba(0,0,0,.5) !important;
   border: 1px solid #555 !important;
   border-left: 0 !important;
@@ -12,53 +12,55 @@ const StyledMenu = styled(Menu.Menu)`
   position: absolute !important;
   border-radius: none !important;
   width: 100%;
-`
+  position:sticky !important;  
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  z-index:1;`
 
 const StyledUL = styled.ul`
   list-style: none;
   margin: 0;
-  padding: 0;
-  display: flex;
-  justify-content: flex-end;
+  display: flex !important;
   color: white;
   text-transform: uppercase;
   font-size: 16px;
   font-weight: 700;
   color: #fff;
-  padding: 30px 20px;
+  padding: 0px;
   display: block;
   text-decoration: none;
   cursor: pointer;
   letter-spacing: 3px;
+  justify-content: flex-end;
+`
+const StyledLi = styled.li`
+  flex: 0 1 auto;
+  display: inline-flex;
+  text-align: -webkit-match-parent;
+  list-style: none;
+  padding: 30px 20px;
+  align-self: flex-end;
 `
 
 class NavBar extends Component {
 
-
-
 render() {
   return  (
     <StyledMenu fixed={'top'}>
-    <header class="header-scrolled">
-   <div>
-    <nav>
       <StyledUL>
-        <li>
+        <StyledLi>
           <Link to="/">
                 Home
           </Link>  
-        </li>
-        <li>
+        </StyledLi>
+        <StyledLi>
           <Link to="/events" >
             Events
           </Link>
-        </li>
+        </StyledLi>
       </StyledUL>
-    </nav>
-    </div>
-    </header>
-
-      </StyledMenu>
+    </StyledMenu>
   );
   }
 }
