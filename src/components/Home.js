@@ -17,7 +17,7 @@ class Home extends React.Component {
   render(){
     return(
 <>
-<div style={styles.backgroundStyle} >
+<div className="background-image"style={styles.backgroundStyle} >
     <Container className='pageprofile'>
     <div className='cencenter'>
     <Image src={machu} size='large' circular />
