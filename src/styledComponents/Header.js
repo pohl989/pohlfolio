@@ -3,8 +3,8 @@ import styled from 'styled-components'
 //This is just an example of how to write styled components. Please
 // Update and delete this comment
 
-const fontSize = (as) => {
-  switch(as) {
+const fontSize = (size) => {
+  switch(size) {
     case 'huge':
       return '6rem'
     case 'large':
@@ -68,8 +68,7 @@ const align = (align) => {
 export default styled.h1`
   margin: ${props => subHeader(props.sub)};
   text-align: ${props => align(props.align)};
-  font-size: ${props => fontSize(props.as)};
+  font-size: ${props => fontSize(props.size)};
   font-family: 'Roboto Mono', monospace;
   color: ${props => color(props.bColor)};
-  box-shado: inset 3px 4px 5px #000;
 `

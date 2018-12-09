@@ -7,7 +7,7 @@ import MyHeader from './components/MyHeader'
 
 const App = () => (
   <div>
-    <MyHeader />
+    <MyHeader style={{padding: "50px"}} />
     <NavBar />
     <div style={{paddingTop: '120px'}}>
       <Route exact path="/" component={Home} />
