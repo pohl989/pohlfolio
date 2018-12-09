@@ -69,6 +69,7 @@ export default styled.h1`
   margin: ${props => subHeader(props.sub)};
   text-align: ${props => align(props.align)};
   font-size: ${props => fontSize(props.as)};
+  font-family: 'Roboto Mono', monospace;
   color: ${props => color(props.bColor)};
   box-shado: inset 3px 4px 5px #000;
 `

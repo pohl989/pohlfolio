@@ -7,6 +7,7 @@ import { BrowserRouter } from 'react-router-dom';
 import 'semantic-ui-css/semantic.min.css';
 import { ThemeProvider } from 'styled-components';
 
+
 const theme = {
   fg: 'white',
   bg: 'black',
