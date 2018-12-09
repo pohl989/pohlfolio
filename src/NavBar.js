@@ -57,12 +57,12 @@ render() {
         </StyledLi>
         <StyledLi>
           <Link to="/">
-                Home
+            Projects
           </Link>  
         </StyledLi>
         <StyledLi>
           <Link to="/events" >
-            Events
+            My Skills
           </Link>
         </StyledLi>
       </StyledUL>
