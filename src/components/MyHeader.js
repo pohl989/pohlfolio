@@ -40,18 +40,15 @@ class MyHeader extends React.Component {
     return(
       <Welcome>
         <div style={styles.boxStyles}>
+            <Image centered src={logo} size='small' style={{marginBottom: "15px"}}/>
           <div style={{display: "flex", justifyContent: "space-around" }}>
-            <Image src={logo} size='tiny' style={{maxHeight: "75px"}}/>
             <div>
               <Header size={"large"} align={"center"}>Hello, I'm Ben Pohl.</Header>
               <Header align={"center"} style={{marginBottom: '40px'}}>I'm a Rails + React Developer</Header>
             </div>
           </div>
-          <div style={{justifyContent: 'center'}}>
-            <Image centered src={machu} size='large' circular />
-          </div>
           <div style={{alignSelf: "flex-end", flexDirection: "row-reverse"}}>
-            <Button floated={"right"} color={"pink"} inverted>Click Me</Button>
+            <Button floated={"right"} color={"blue"} inverted>View my work</Button>
           </div>
         </div>
       </Welcome>
