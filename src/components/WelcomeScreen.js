@@ -1,13 +1,13 @@
 import React, { Component } from 'react';
 import { 
-  Button, 
   Image
 } from 'semantic-ui-react'
 import styled from 'styled-components'
 import Header from '../styledComponents/Header.js'
 import logo from '../images/Pohl989_logo.png'
 import Background from '../images/dark-gravel.png'
-import {WelcomeCard} from '../styledComponents/Card.js'
+import { WelcomeCard } from '../styledComponents/Card.js'
+import { BetterButton } from '../styledComponents/Button.js'
 
 const WelcomeBackground = styled.div`
   background-image: url(${Background});
@@ -27,7 +27,7 @@ class WelcomeScreen extends Component {
           <Header size={"large"} align={"center"}>Hello, I'm Ben Pohl.</Header>
           <Header align={"center"} style={{marginBottom: '40px'}}>I'm a Rails + React Developer</Header>
           <a href="#start">
-            <Button floated={"right"} color={"blue"} inverted>View my work</Button>
+            <BetterButton>View my work</BetterButton>
           </a>
         </WelcomeCard>
       </WelcomeBackground>

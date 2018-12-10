@@ -10,7 +10,7 @@ const sizes = {
 export const colors = {
   mineShaft: "#222222",
   neonGreen: "#9fcf6e",
-  blackL: "000"
+  black: "000"
 }
 
 // iterate through the sizes and create a media template

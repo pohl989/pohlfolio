@@ -28,7 +28,7 @@ export const ProjectCard  = styled.div`
 
 export const WelcomeCard  = styled.div`
   width: 80%;
-  border: 5px solid ${colors.black};
+  border: 5px solid ${colors.neonGreen};
   border-radius: 20px;
   margin: 20px 0px;
   position: center;
