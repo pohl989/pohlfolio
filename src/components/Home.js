@@ -12,7 +12,7 @@ import Header from '../styledComponents/Header.js'
 const styles = {
  
 }
-class Home extends React.Component {
+class Home extends Component {
 
   render(){
     return(
@@ -22,8 +22,6 @@ class Home extends React.Component {
     <div className='cencenter'>
     <Image src={machu} size='large' circular />
     <Image src={logo} size='large' />
-    <Image src={machu} size='large' circular />
-    <Image src={machu} size='large' circular />
     <Image src={machu} size='large' circular />
       <Header as="h1">Ben Pohl</Header>
       <h5>pohl989@gmail.com</h5>

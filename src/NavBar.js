@@ -47,7 +47,7 @@ class NavBar extends Component {
 
 render() {
   return  (
-    <StyledMenu fixed={'top'}>
+    <StyledMenu id="navbar" fixed={'top'}>
       <StyledUL>
       
         <StyledLi style={{padding: '0px', marginBottom: '10px'}}>

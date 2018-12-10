@@ -1,4 +1,3 @@
-import React, { Component } from 'react'
 import styled from 'styled-components'
 //This is just an example of how to write styled components. Please
 // Update and delete this comment
@@ -11,8 +10,6 @@ const fontSize = (size) => {
       return '3rem'
     case 'medium':
       return '2rem'
-    case 'small':
-      return '1.5rem'
     case 'small':
       return '1rem'
     case 'h1':
