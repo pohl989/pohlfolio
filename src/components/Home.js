@@ -7,18 +7,30 @@ import { Container,
 import machu from '../images/machu.JPG'
 import logo from '../images/Pohl989_logo.png'
 import Header from '../styledComponents/Header.js'
-
+import Project from './Project'
 
 const styles = {
  
 }
 class Home extends Component {
 
+  state = {
+    projects: [
+      {title: "This is an example", url: "www.sample_url.com/1", description: "This is what we what we do 1" },
+      {title: "This is an example 1", url: "www.sample_url.com/2", description: "This is what we what we do 2" },
+      {title: "This is an example 2", url: "www.sample_url.com/3", description: "This is what we what we do 3"}
+    ]
+  }
+
   render(){
     return(
 <>
-<div className="background-image"style={styles.backgroundStyle} >
+<div className="background-image"style={styles.backgroundStyle}>
     <Container className='pageprofile'>
+    <Project></Project>
+    <Project></Project>
+    <Project></Project>
+    <Project></Project>
     <div className='cencenter'>
     <Image src={machu} size='large' circular />
     <Image src={logo} size='large' />

@@ -1,7 +1,5 @@
 import React, { Component } from 'react';
-import { 
-  Image
-} from 'semantic-ui-react'
+import { Image } from 'semantic-ui-react'
 import styled from 'styled-components'
 import Header from '../styledComponents/Header.js'
 import logo from '../images/Pohl989_logo.png'
