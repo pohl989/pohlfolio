@@ -73,16 +73,3 @@ render() {
 
 
 export default withRouter(NavBar);
-
-
-// <div class="logo-wrap">
-//     <a class="logo" href="/">TableBooking</a>
-//   </div>
-
-
-// <Menu.Menu position='right'>
-// <Menu.Item
-  // name='Logout'
-  // onClick={() => dispatch(handleLogout(history))}
-// />
-// </Menu.Menu> 
