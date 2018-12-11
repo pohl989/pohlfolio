@@ -9,12 +9,12 @@ class Project extends Component {
 
   render() {
     return(
-      <Card>
+      <Card style={{  alignItems: "stretch", margin: "12px"}}>
         <Image src={machu} />
         <Card.Content>
           <Card.Header>CNSRVIT</Card.Header>
           <Card.Meta>Full Stack Rails Web Suite</Card.Meta>
-          <Card.Description>Developed solutions for project management, invoicing, member management </Card.Description>
+          <Card.Description>Developed solutions for project management, invoicing, member management</Card.Description>
         </Card.Content>
       </Card>
     )

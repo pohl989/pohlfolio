@@ -3,6 +3,17 @@ import { media, colors } from './Defaults'
 
 const cardShadow = "inset 3px 4px 5px #000, 5px 6px 7px rgba(0, 0, 0, .3), inset 1px 2px 3px #fff"
 
+
+
+export const Cards = styled.div`
+  justify-content: space-evenly;
+  display: flex;
+  flex-wrap: wrap;
+  box-sizing: border-box;
+  align-items: stretch;
+`
+
+
 export const Card = styled.div`
   width: 80%;
   border: 5px solid ${colors.neonGreen};

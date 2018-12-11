@@ -12,7 +12,7 @@ export const colors = {
   neonGreen: "#9fcf6e",
   malibu: "#5cafff",
   orange: "#ff5722",
-  black: "000"
+  black: "000",
 }
 
 // iterate through the sizes and create a media template

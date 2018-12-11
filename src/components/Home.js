@@ -1,13 +1,10 @@
 import React, { Component } from 'react';
-import { Container, 
-  Grid, 
-  Segment, 
-  Image,
-  Card
-} from 'semantic-ui-react'
+import { Container } from 'semantic-ui-react'
+import { Cards } from '../styledComponents/Card'
 import machu from '../images/machu.JPG'
 import logo from '../images/Pohl989_logo.png'
 import Header from '../styledComponents/Header.js'
+import { colors } from '../styledComponents/Defaults'
 import Project from './Project'
 
 const styles = {
@@ -26,46 +23,16 @@ class Home extends Component {
   render(){
     return(
 <>
-<div className="background-image"style={styles.backgroundStyle}>
+  <div className="background-image"style={styles.backgroundStyle}>
     <Container className='pageprofile'>
-    <Card.Group>
-    <Project></Project>
-    <Project></Project>
-    <Project></Project>
-    <Project></Project>
-    </Card.Group>
-    <div className='cencenter'>
-    <Image src={machu} size='large' circular />
-    <Image src={logo} size='large' />
-    <Image src={machu} size='large' circular />
-      <Header as="h1">Ben Pohl</Header>
-      <h5>pohl989@gmail.com</h5>
-      </div>
-      <Grid columns={3} >
-      <Grid.Row color='black' textAlign='center'>
-      <Grid.Column>
-        <Segment color='black' inverted>
-          @pohl989
-        </Segment>
-      </Grid.Column>
-      <Grid.Column>
-        <Segment color='black' inverted>
-          github
-        </Segment>
-      </Grid.Column>
-      <Grid.Column>
-        <Segment color='black' inverted>
-          twitter
-        </Segment>
-      </Grid.Column>
-        <Grid.Column className='gutter'>
-          </Grid.Column>
-          </Grid.Row>
-          </Grid>
-          <Grid>
-          <Grid.Column>
-        </Grid.Column>
-      </Grid>
+      <h2 style={{color: `${colors.neonGreen}`}}>Projects</h2>
+      <Cards>
+        <Project></Project>
+        <Project></Project>
+        <Project></Project>
+      </Cards>
+      <h2 style={{color: `${colors.neonGreen}`}}>Skills</h2>
+
     </Container>
   </div>
 
