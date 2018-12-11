@@ -13,7 +13,6 @@ export const Cards = styled.div`
   align-items: stretch;
 `
 
-
 export const Card = styled.div`
   width: 80%;
   border: 5px solid ${colors.neonGreen};
@@ -21,12 +20,27 @@ export const Card = styled.div`
   margin: 20px 0px;
 `
 
-
 export const ProjectCard  = styled(Card)`
   width: 50%;
   height: auto;
   background-color: rgb(34,34,34);
   box-shadow: ${cardShadow};
+  max-width: 100%;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  width: 290px;
+  min-height: 0;
+  background: #fff;
+  padding: 0;
+  border: none;
+  border-radius: .28571429rem;
+  box-shadow: 0 1px 3px 0 #d4d4d5, 0 0 0 1px #d4d4d5;
+  -webkit-transition: -webkit-box-shadow .1s ease,-webkit-transform .1s ease;
+  -webkit-transition: box-shadow .1s ease,-webkit-transform .1s ease;
+  transition: box-shadow .1s ease,-webkit-transform .1s ease;
+  transition: box-shadow .1s ease,transform .1s ease;
+  transition: box-shadow .1s ease,transform .1s ease,-webkit-transform .1s ease;
 `
 
 export const ProjectImage = styled.div`
