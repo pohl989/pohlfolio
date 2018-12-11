@@ -1,14 +1,16 @@
 import styled from 'styled-components'
+import { colors } from './Defaults'
 
 
 export const BetterButton = styled.button`
   background-color: transparent;
-  box-shadow: 0 0 0 2px #5cafff inset !important;
-  color: #5cafff;
+  box-shadow: 1px 1px 2px rgba(240,240,240,0.3), 0 0 0 2px ${props => colors[props.color]};
+  text-shadow: 1px 1px 2px rgba(240,240,240,0.3), 0 0 0 2px ${props => colors[props.color]};
+  color: ${props => colors[props.color]};
+  border: 2px solid ${props => colors[props.color]} !important;
   background: transparent none;
   padding: 11px 21px; 
   cursor: pointer;
-  display: inline-block;
   min-height: 1em;
   outline: 0;
   border: none;
@@ -22,10 +24,10 @@ export const BetterButton = styled.button`
   font-style: normal;
   text-align: center;
   text-decoration: none;
-  border-radius: .28571429rem;
+  border-radius: .9rem;
   float: right;
   &:hover{
-    background: #5cafff;
+    background: ${props => colors[props.color]};
     color: #222222;
     font-weight: 900;
     text-shadow: 1px 1px 1px #ddd

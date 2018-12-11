@@ -2,7 +2,8 @@ import React, { Component } from 'react';
 import { Container, 
   Grid, 
   Segment, 
-  Image
+  Image,
+  Card
 } from 'semantic-ui-react'
 import machu from '../images/machu.JPG'
 import logo from '../images/Pohl989_logo.png'
@@ -27,10 +28,12 @@ class Home extends Component {
 <>
 <div className="background-image"style={styles.backgroundStyle}>
     <Container className='pageprofile'>
+    <Card.Group>
     <Project></Project>
     <Project></Project>
     <Project></Project>
     <Project></Project>
+    </Card.Group>
     <div className='cencenter'>
     <Image src={machu} size='large' circular />
     <Image src={logo} size='large' />

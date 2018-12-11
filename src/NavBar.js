@@ -5,18 +5,19 @@ import styled from 'styled-components'
 import logo from './images/Pohl989_logo.png'
 
 const StyledMenu = styled.nav`
-  background-color: rgba(0,0,0,.5) !important;
-  border: 1px solid #555 !important;
-  border-left: 0 !important;
-  border-right: 0 !important;
-  position: absolute !important;
-  border-radius: none !important;
-  width: 100%;
-  position:sticky !important;  
-  position: -webkit-sticky;
-  position: sticky;
-  top: 0;
-  z-index:1;`
+    box-shadow: 2px 3px 4px rgba(45,45,45,0.6), inset 2px 3px 4px rgba(45,45,45,0.9);
+    background-color: rgba(0,0,0,.8) !important;
+    border: 5px solid #555 !important;
+    border-left: 0 !important;
+    border-right: 0 !important;
+    position: absolute !important;
+    border-radius: none !important;
+    width: 100%;
+    position:sticky !important;  
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    z-index:1;`
 
 const StyledUL = styled.ul`
   list-style: none;

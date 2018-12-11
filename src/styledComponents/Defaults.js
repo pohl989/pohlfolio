@@ -10,6 +10,8 @@ const sizes = {
 export const colors = {
   mineShaft: "#222222",
   neonGreen: "#9fcf6e",
+  malibu: "#5cafff",
+  orange: "#ff5722",
   black: "000"
 }
 

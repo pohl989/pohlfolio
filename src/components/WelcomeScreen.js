@@ -25,7 +25,7 @@ class WelcomeScreen extends Component {
           <Header size={"large"} align={"center"}>Hello, I'm Ben Pohl.</Header>
           <Header align={"center"} style={{marginBottom: '40px'}}>I'm a Rails + React Developer</Header>
           <a href="#start">
-            <BetterButton>View my work</BetterButton>
+            <BetterButton color={'malibu'}>View my work</BetterButton>
           </a>
         </WelcomeCard>
       </WelcomeBackground>
