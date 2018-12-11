@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { ProjectCard } from '../styledComponents/Card'
+import { ProjectCard, ProjectImage } from '../styledComponents/Card'
 import { Image } from 'semantic-ui-react'
 import machu from '../images/machu.JPG'
 
@@ -12,7 +12,7 @@ class Project extends Component {
     return(
       <>
       <ProjectCard>
-        <Image src={machu} />
+        <ProjectImage src={machu} />
         <div style={{
           flexGrow: "1",
           border: "none",
