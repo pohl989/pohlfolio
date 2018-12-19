@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import { Image } from 'semantic-ui-react';
 import { Link, withRouter } from 'react-router-dom';
 import styled from 'styled-components'
-import logo from './images/Pohl989_logo.png'
+import logo from '../images/Pohl989_logo.png'
 
 const StyledMenu = styled.nav`
     box-shadow: 2px 3px 4px rgba(45,45,45,0.6), inset 2px 3px 4px rgba(45,45,45,0.9);
