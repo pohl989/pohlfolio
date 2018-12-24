@@ -1,9 +1,10 @@
 import React, { Component } from 'react';
-import { Container } from 'semantic-ui-react'
+// import { Container } from 'semantic-ui-react'
 import { Cards } from '../styledComponents/Card'
 import machu from '../images/machu.JPG'
 import logo from '../images/Pohl989_logo.png'
 import Header from '../styledComponents/Header.js'
+import { Container } from '../styledComponents/Container'
 import { colors } from '../styledComponents/Defaults'
 import Project from './Project'
 
@@ -24,7 +25,7 @@ class Home extends Component {
     return(
 <>
   <div className="background-image"style={styles.backgroundStyle}>
-    <Container className='pageprofile'>
+    <Container >
       <h2 style={{color: `${colors.neonGreen}`}}>Projects</h2>
       <Cards>
         <Project></Project>
