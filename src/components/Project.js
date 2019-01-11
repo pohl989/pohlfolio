@@ -1,18 +1,17 @@
 import React, { Component } from 'react';
 import { ProjectCard, ProjectImage } from '../styledComponents/Card'
 import { Image } from 'semantic-ui-react'
-import machu from '../images/machu.JPG'
 
 
 class Project extends Component {
 
 
   render() {
-    
+    const { title, description, subTitle, imageUrl } = this.props;
     return(
       <>
       <ProjectCard>
-        <ProjectImage src={machu} />
+        <ProjectImage  src={imageUrl}/>
         <div style={{
           flexGrow: "1",
           border: "none",
@@ -31,14 +30,14 @@ class Project extends Component {
             marginTop: "-.21425em",
             lineHeight: "1.28571429em"
           }}>
-            CNSRVIT
+            {title}
           </div>
           <div style={{
             fontSize: "1em",
             color: "rgba(0,0,0,.4)"
           }}
           >
-            Full Stack Rails Web Suite
+            {subTitle}
           </div>
           <div style={{
             clear: "both",
@@ -46,7 +45,7 @@ class Project extends Component {
 
           }}
           >
-            Developed solutions for project management, invoicing, member management
+            {description}
           </div>
 
         </div>

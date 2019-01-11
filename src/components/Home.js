@@ -7,6 +7,10 @@ import Header from '../styledComponents/Header.js'
 import { Container } from '../styledComponents/Container'
 import { colors } from '../styledComponents/Defaults'
 import Project from './Project'
+import member from '../images/cnsrvit_member.png'
+import tablebooking from '../images/tablebooking.png'
+import flashcards from '../images/flash_cards.png'
+
 
 const styles = {
  
@@ -15,9 +19,27 @@ class Home extends Component {
 
   state = {
     projects: [
-      {title: "This is an example", url: "www.sample_url.com/1", description: "This is what we what we do 1" },
-      {title: "This is an example 1", url: "www.sample_url.com/2", description: "This is what we what we do 2" },
-      {title: "This is an example 2", url: "www.sample_url.com/3", description: "This is what we what we do 3"}
+      {
+        title: "CNSRVIT", 
+        imageUrl: member, 
+        description: "Developed solutions for project management, invoicing, member management", 
+        subTitle: "Full Stack Rails Web Suite",
+        link: "https://tablebooking-dpl.herokuapp.com/"
+      },
+      {
+        title: "TableBooking App", 
+        imageUrl: tablebooking, 
+        subTitle: "Rails + React Proof of Concept",
+        description: "Worked with a small team from Dev Point Labs to create a table booking proof of concept utilizing React, Redux, & Rails", 
+        link: "https://tablebooking-dpl.herokuapp.com/" 
+      },
+      {
+        title: "React Flash Cards", 
+        imageUrl: flashcards, 
+        subTitle: "Rails + React App",
+        description: "I created a fun little Flash Card app utilizing Rails & React with Semantic UI.", 
+        link: "https://rails-react-flashcards.herokuapp.com/" 
+      },
     ]
   }
 
@@ -28,9 +50,18 @@ class Home extends Component {
     <Container >
       <h2 style={{color: `${colors.neonGreen}`}}>Projects</h2>
       <Cards>
-        <Project></Project>
-        <Project></Project>
-        <Project></Project>
+        {this.state.projects.map( (single, index) => 
+          <Project 
+            key={index}
+            title={single.title}
+            subTitle={single.subTitle}
+            description={single.description}
+            imageUrl={single.imageUrl}
+          ></Project>
+          
+          
+          
+          )}
       </Cards>
       <h2 style={{color: `${colors.neonGreen}`}}>Skills</h2>
       <h2 style={{color: `${colors.neonGreen}`}}>About Me</h2>
