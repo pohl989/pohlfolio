@@ -1,15 +1,12 @@
 import React, { Component } from 'react';
-// import { Container } from 'semantic-ui-react'
 import { Cards } from '../styledComponents/Card'
-import machu from '../images/machu.JPG'
-import logo from '../images/Pohl989_logo.png'
-import Header from '../styledComponents/Header.js'
 import { Container } from '../styledComponents/Container'
 import { colors } from '../styledComponents/Defaults'
 import Project from './Project'
 import member from '../images/cnsrvit_member.png'
 import tablebooking from '../images/tablebooking.png'
 import flashcards from '../images/flash_cards.png'
+import memory from '../images/memory.png'
 
 
 const styles = {
@@ -24,7 +21,7 @@ class Home extends Component {
         imageUrl: member, 
         description: "Developed solutions for project management, invoicing, member management", 
         subTitle: "Full Stack Rails Web Suite",
-        link: "https://tablebooking-dpl.herokuapp.com/"
+        link: "https://cnsrvit.usaconservation.org/"
       },
       {
         title: "TableBooking App", 
@@ -40,7 +37,15 @@ class Home extends Component {
         description: "I created a fun little Flash Card app utilizing Rails & React with Semantic UI.", 
         link: "https://rails-react-flashcards.herokuapp.com/" 
       },
-    ]
+      {
+        title: "Drag Queen Memory Game", 
+        imageUrl: memory, 
+        subTitle: "JQuery mini app",
+        description: "I decided to make a Drag Queen Memory Game with JQuery. Because... why not? The world needed this.", 
+        link: "https://github.com/pohl989/memory-game" 
+      },
+    ], 
+    aboutMe: "Hello, I'm Ben Pohl. I'm a Rails + React Developer. Creating great user experiences is a passion of mine. When I know that I am building something that solves a problem for someone it makes my day. I love the work that do as a developer. Every day I get to sit in front of code and make the world a better place."
   }
 
   render(){
@@ -65,7 +70,9 @@ class Home extends Component {
       </Cards>
       <h2 style={{color: `${colors.neonGreen}`}}>Skills</h2>
       <h2 style={{color: `${colors.neonGreen}`}}>About Me</h2>
-      <p style={{color: `${colors.white}`, fontSize: '1.2em'}}>"At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga. Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus. Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe eveniet ut et voluptates repudiandae sint et molestiae non recusandae. Itaque earum rerum hic tenetur a sapiente delectus, ut aut reiciendis voluptatibus maiores alias consequatur aut perferendis doloribus asperiores repellat."</p>
+      <p style={{color: `${colors.white}`, fontSize: '1.6em', marginBottom: '80px'}}>
+          {this.state.aboutMe}
+      </p>
     </Container>
   </div>
 

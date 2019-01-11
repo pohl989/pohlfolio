@@ -22,7 +22,6 @@ export const Card = styled.div`
 `
 
 export const ProjectCard  = styled(Card)`
-  width: 50%;
   height: auto;
   background-color: rgb(34,34,34);
   box-shadow: ${cardShadow2};
@@ -30,7 +29,8 @@ export const ProjectCard  = styled(Card)`
   position: relative;
   display: flex;
   flex-direction: column;
-  width: 290px;
+  min-width: 280px;
+  max-width: 400px;
   min-height: 0;
   background: #fff;
   padding: 0;
