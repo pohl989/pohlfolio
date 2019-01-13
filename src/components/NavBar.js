@@ -49,6 +49,10 @@ const NavLogo = styled.img`
   height: auto;
   position: relative;
 `
+const StyledLink = styled(Link)`
+  text-decoration: none;
+  color: #4183c4;
+`
 
 class NavBar extends Component {
 
@@ -63,14 +67,14 @@ render() {
           </Link>  
         </StyledLi>
         <StyledLi>
-          <Link to="/">
+          <StyledLink to="/">
             Projects
-          </Link>  
+          </StyledLink>  
         </StyledLi>
         <StyledLi>
-          <Link to="/events" >
+          <StyledLink to="/events" >
             My Skills
-          </Link>
+          </StyledLink>
         </StyledLi>
       </StyledUL>
     </StyledMenu>
