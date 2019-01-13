@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { Link, withRouter } from 'react-router-dom';
+import { withRouter } from 'react-router-dom';
 import styled from 'styled-components'
 import logo from '../images/Pohl989_logo.png'
 
