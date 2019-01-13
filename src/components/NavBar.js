@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import { Image } from 'semantic-ui-react';
 import { Link, withRouter } from 'react-router-dom';
 import styled from 'styled-components'
 import logo from '../images/Pohl989_logo.png'
@@ -44,6 +43,13 @@ const StyledLi = styled.li`
   align-self: flex-end;
 `
 
+const NavLogo = styled.img`
+  width: 80px;
+  display: block; 
+  height: auto;
+  position: relative;
+`
+
 class NavBar extends Component {
 
 render() {
@@ -53,7 +59,7 @@ render() {
       
         <StyledLi style={{padding: '0px', marginBottom: '10px'}}>
           <Link to="/">
-            <Image src={logo} size='tiny' />
+            <NavLogo src={logo} alt="Pohlfolio Logo" />
           </Link>  
         </StyledLi>
         <StyledLi>

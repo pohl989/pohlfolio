@@ -14,13 +14,24 @@ const WelcomeBackground = styled.div`
   justify-content: center
   align-items: center`
 
+const WelcomeLogo = styled.img`
+  margin-bottom: "15px";
+  width: "150px";
+  height: "auto";
+  display: "block";
+  position: "relative";
+  margin-right: "auto";
+  margin-left: "auto;
+`
+
+
 class WelcomeScreen extends Component {
 
   render(){
     return(
       <WelcomeBackground>
         <WelcomeCard>
-          <img centered src={logo} size='small' style={{marginBottom: "15px", width: "150px", height: "auto", display: "block", position: "relative", marginRight: "auto", marginLeft: "auto"}}/>
+          <WelcomeLogo alt="Pohlfolio Logo" src={logo} size='small' style={{marginBottom: "15px", width: "150px", height: "auto", display: "block", position: "relative", marginRight: "auto", marginLeft: "auto"}}/>
           <Header size={"large"} align={"center"}>Hello, I'm Ben Pohl.</Header> 
           <Header align={"center"} style={{marginBottom: '40px'}}>I'm a Rails + React Developer</Header>
           <a href="#start">
