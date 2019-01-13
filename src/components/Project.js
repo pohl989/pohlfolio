@@ -12,7 +12,7 @@ class Project extends Component {
           target="_blank"  
           rel="noopener noreferrer"
           href={link} 
-          style={{textDecoration: "none", display: "grid"}} 
+          style={{textDecoration: "none", display: "flex", alignItems: "center", flexGrow: "1",maxWidth: "400px"}} 
         >
           <ProjectCard >
             <ProjectImage  src={imageUrl}/>

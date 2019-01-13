@@ -23,7 +23,8 @@ export const Card = styled.div`
 `
 
 export const ProjectCard  = styled(Card)`
-  height: auto;
+  height: 90%;
+  width: 100%;
   background-color: rgb(34,34,34);
   box-shadow: ${cardShadow2};
   max-width: 100%;
@@ -37,7 +38,6 @@ export const ProjectCard  = styled(Card)`
   background: #fff;
   padding: 0;
   border: 5px solid ${colors.neonGreen};
-  box-shadow: ${cardShadow};
   &:hover{
     border: 8px solid ${colors.malibu};
   }
