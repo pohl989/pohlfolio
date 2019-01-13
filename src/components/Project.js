@@ -1,7 +1,5 @@
 import React, { Component } from 'react';
 import { ProjectCard, ProjectImage } from '../styledComponents/Card'
-import { Image } from 'semantic-ui-react'
-
 
 class Project extends Component {
 

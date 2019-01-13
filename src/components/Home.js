@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { Cards } from '../styledComponents/Card'
+import { Cards, TextCard } from '../styledComponents/Card'
 import { Container } from '../styledComponents/Container'
 import { colors } from '../styledComponents/Defaults'
 import Project from './Project'
@@ -70,9 +70,11 @@ class Home extends Component {
       </Cards>
       <h2 style={{color: `${colors.neonGreen}`}}>Skills</h2>
       <h2 style={{color: `${colors.neonGreen}`}}>About Me</h2>
-      <p style={{color: `${colors.white}`, fontSize: '1.6em', marginBottom: '80px'}}>
-          {this.state.aboutMe}
-      </p>
+      <TextCard>
+        <p style={{fontSize: '1.5em'}}>
+            {this.state.aboutMe}
+        </p>
+      </TextCard>
     </Container>
   </div>
 

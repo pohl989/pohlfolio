@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import { Image } from 'semantic-ui-react'
 import styled from 'styled-components'
 import Header from '../styledComponents/Header.js'
 import logo from '../images/Pohl989_logo.png'
@@ -21,8 +20,8 @@ class WelcomeScreen extends Component {
     return(
       <WelcomeBackground>
         <WelcomeCard>
-          <Image centered src={logo} size='small' style={{marginBottom: "15px"}}/>
-          <Header size={"large"} align={"center"}>Hello, I'm Ben Pohl.</Header>
+          <img centered src={logo} size='small' style={{marginBottom: "15px", width: "150px", height: "auto", display: "block", position: "relative", marginRight: "auto", marginLeft: "auto"}}/>
+          <Header size={"large"} align={"center"}>Hello, I'm Ben Pohl.</Header> 
           <Header align={"center"} style={{marginBottom: '40px'}}>I'm a Rails + React Developer</Header>
           <a href="#start">
             <BetterButton color={'malibu'}>View my work</BetterButton>

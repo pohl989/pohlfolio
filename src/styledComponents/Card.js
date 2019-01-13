@@ -19,6 +19,7 @@ export const Card = styled.div`
   border: 5px solid ${colors.neonGreen};
   border-radius: ${borderRadius};
   margin: 20px 0px;
+  transition: 0.6s;
 `
 
 export const ProjectCard  = styled(Card)`
@@ -36,6 +37,17 @@ export const ProjectCard  = styled(Card)`
   padding: 0;
   border: 5px solid ${colors.neonGreen};
   box-shadow: ${cardShadow};
+`
+
+export const TextCard = styled(Card)`
+  background-color: rgba(256, 256, 256, 0.1);
+  box-shadow: ${cardShadow};
+  color: ${colors.white};
+  width: 100%;
+  padding: 20px 20px;
+  text-align: left;
+  font-family: 'Roßboto Mono', monospace;
+  font-size: '1.6em'
 `
 
 export const ProjectImage = styled.img`
