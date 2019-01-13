@@ -45,7 +45,7 @@ class Home extends Component {
         link: "https://github.com/pohl989/memory-game" 
       },
     ], 
-    aboutMe: "Hello, I'm Ben Pohl. I'm a Rails + React Developer. Creating great user experiences is a passion of mine. When I know that I am building something that solves a problem for someone it makes my day. I love the work that do as a developer. Every day I get to sit in front of code and make the world a better place."
+    aboutMe: "Hello, I'm Ben Pohl. I'm a Rails + React Developer. Creating great user experiences is a passion of mine. When I know that I am building something that solves a problem for someone it makes my day. I love the work that I do as a developer. Every day I get to sit in front of code and make the world a better place."
   }
 
   render(){
@@ -69,7 +69,7 @@ class Home extends Component {
           
           )}
       </Cards>
-]      <h2 id= "about" style={{color: `${colors.neonGreen}`}}>About Me</h2>
+      <h2 id= "about" style={{color: `${colors.neonGreen}`}}>About Me</h2>
       <Cards>
         <TextCard>
           <p style={{fontSize: '1.5em'}}>
