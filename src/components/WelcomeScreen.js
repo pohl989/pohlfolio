@@ -5,6 +5,7 @@ import logo from '../images/Pohl989_logo.png'
 import Background from '../images/dark-gravel.png'
 import { WelcomeCard } from '../styledComponents/Card.js'
 import { BetterButton } from '../styledComponents/Button.js'
+import { Container } from '../styledComponents/Container.js'
 
 const WelcomeBackground = styled.div`
   background-image: url(${Background});
