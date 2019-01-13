@@ -53,7 +53,7 @@ class Home extends Component {
 <>
   <div className="background-image"style={styles.backgroundStyle}>
     <Container >
-      <h2 style={{color: `${colors.neonGreen}`}}>Projects</h2>
+      <h2 id="projects" style={{color: `${colors.neonGreen}`}}>Projects</h2>
       <Cards>
         {this.state.projects.map( (single, index) => 
           <Project 
@@ -62,14 +62,14 @@ class Home extends Component {
             subTitle={single.subTitle}
             description={single.description}
             imageUrl={single.imageUrl}
+            link={single.link}
           ></Project>
           
           
           
           )}
       </Cards>
-      <h2 style={{color: `${colors.neonGreen}`}}>Skills</h2>
-      <h2 style={{color: `${colors.neonGreen}`}}>About Me</h2>
+]      <h2 id= "about" style={{color: `${colors.neonGreen}`}}>About Me</h2>
       <Cards>
         <TextCard>
           <p style={{fontSize: '1.5em'}}>

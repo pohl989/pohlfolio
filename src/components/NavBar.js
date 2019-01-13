@@ -49,7 +49,7 @@ const NavLogo = styled.img`
   height: auto;
   position: relative;
 `
-const StyledLink = styled(Link)`
+const StyledLink = styled.a`
   text-decoration: none;
   color: #4183c4;
 `
@@ -62,18 +62,18 @@ render() {
       <StyledUL>
       
         <StyledLi style={{padding: '0px', marginBottom: '10px'}}>
-          <Link to="/">
+          <a href="#start">
             <NavLogo src={logo} alt="Pohlfolio Logo" />
-          </Link>  
+          </a>  
         </StyledLi>
         <StyledLi>
-          <StyledLink to="/">
+          <StyledLink href="#start">
             Projects
           </StyledLink>  
         </StyledLi>
         <StyledLi>
-          <StyledLink to="/events" >
-            My Skills
+          <StyledLink href="#about" >
+            About Me
           </StyledLink>
         </StyledLi>
       </StyledUL>

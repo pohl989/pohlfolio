@@ -29,6 +29,7 @@ export const ProjectCard  = styled(Card)`
   max-width: 100%;
   position: relative;
   display: flex;
+  cursor: pointer;
   flex-direction: column;
   min-width: 280px;
   max-width: 400px;
@@ -37,6 +38,9 @@ export const ProjectCard  = styled(Card)`
   padding: 0;
   border: 5px solid ${colors.neonGreen};
   box-shadow: ${cardShadow};
+  &:hover{
+    border: 8px solid ${colors.malibu};
+  }
 `
 
 export const TextCard = styled(Card)`
