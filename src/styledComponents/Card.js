@@ -18,7 +18,7 @@ export const Card = styled.div`
   width: 80%;
   border: 5px solid ${colors.neonGreen};
   border-radius: ${borderRadius};
-  margin: 20px 0px;
+  margin: 20px 10px;
   transition: 0.6s;
 `
 
@@ -47,7 +47,9 @@ export const TextCard = styled(Card)`
   padding: 20px 20px;
   text-align: left;
   font-family: 'Roßboto Mono', monospace;
-  font-size: '1.6em'
+  font-size: '1.6em';
+  box-sizing: inherit;
+  display: flex;
 `
 
 export const ProjectImage = styled.img`

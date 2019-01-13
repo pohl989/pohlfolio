@@ -70,11 +70,13 @@ class Home extends Component {
       </Cards>
       <h2 style={{color: `${colors.neonGreen}`}}>Skills</h2>
       <h2 style={{color: `${colors.neonGreen}`}}>About Me</h2>
-      <TextCard>
-        <p style={{fontSize: '1.5em'}}>
-            {this.state.aboutMe}
-        </p>
-      </TextCard>
+      <Cards>
+        <TextCard>
+          <p style={{fontSize: '1.5em'}}>
+              {this.state.aboutMe}
+          </p>
+        </TextCard>
+      </Cards>
     </Container>
   </div>
 

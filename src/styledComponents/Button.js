@@ -25,6 +25,7 @@ export const BetterButton = styled.button`
   text-align: center;
   text-decoration: none;
   border-radius: .9rem;
+  font-size: 100%;
   float: right;
   &:hover{
     background: ${props => colors[props.color]};
