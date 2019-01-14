@@ -1,3 +1,4 @@
+
 import React, { Component } from 'react';
 import { withRouter } from 'react-router-dom';
 
@@ -76,7 +77,7 @@ class NavBar extends Component {
 render() {
   return  (
     <StyledMenu id="navbar" >
-         <a href="#start" style={{display: "inline-flex", maxHeight: "20vmin"}}>
+         <a href="#start" style={{display: "inline-flex", maxHeight: "60px"}}>
             <NavLogo src={logo} alt="Pohlfolio Logo" />
           </a>  
       <StyledUL>
