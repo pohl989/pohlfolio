@@ -66,6 +66,10 @@ const NavLogo = styled.img`
   display: block; 
   height: auto;
   position: relative;
+  ${media.phone`
+    width: 70px;
+    `
+}
 `
 const StyledLink = styled.a`
   text-decoration: none;
