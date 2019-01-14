@@ -5,27 +5,27 @@ import styled from 'styled-components'
 const fontSize = (size) => {
   switch(size) {
     case 'huge':
-      return '6rem'
+      return '20vmin'
     case 'large':
-      return '3rem'
+      return '8vmin'
     case 'medium':
-      return '2rem'
+      return '6vmin'
     case 'small':
-      return '1rem'
+      return '4vmin'
     case 'h1':
-      return '6rem'
+      return '10vmin'
     case 'h2':
-      return '3rem'
+      return '8vmin'
     case 'h3':
-      return '2rem'
+      return '6vmin'
     case 'h4':
-      return '1.5rem'
+      return '5vmin'
     case 'h5':
-      return '1rem'
+      return '4vmin'
     case 'h6':
-      return '.5rem'
+      return '3vmin'
     default:
-      return '1.5rem'
+      return '4vmin'
   }
 }
 

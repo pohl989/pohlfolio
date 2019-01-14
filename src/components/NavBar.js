@@ -1,6 +1,9 @@
 import React, { Component } from 'react';
 import { withRouter } from 'react-router-dom';
+
 import styled from 'styled-components'
+import { media } from '../styledComponents/Defaults'
+
 import logo from '../images/Pohl989_logo.png'
 
 const StyledMenu = styled.nav`
@@ -16,23 +19,32 @@ const StyledMenu = styled.nav`
   position: -webkit-sticky;
   position: sticky;
   top: 0;
-  z-index:1;`
+  z-index:1;
+  ${media.phone`
+    height: 70px;
+    `
+  }
+`
 
 const StyledUL = styled.ul`
   list-style: none;
   margin: 0;
-  display: flex !important;
+  display: inline-flex;
   color: white;
   text-transform: uppercase;
   font-size: 16px;
   font-weight: 700;
   color: #fff;
   padding: 0px;
-  display: block;
   text-decoration: none;
   cursor: pointer;
   letter-spacing: 3px;
   justify-content: flex-end;
+  ${media.phone`
+    font-size: 12px;
+    justify-content: center;
+  `
+  }
 `
 const StyledLi = styled.li`
   flex: 0 1 auto;
@@ -41,6 +53,11 @@ const StyledLi = styled.li`
   list-style: none;
   padding: 30px 20px;
   align-self: flex-end;
+    ${media.phone`
+    font-size: 12px;
+    display: none;
+  `
+}
 `
 
 const NavLogo = styled.img`
@@ -58,13 +75,13 @@ class NavBar extends Component {
 
 render() {
   return  (
-    <StyledMenu id="navbar" fixed={'top'}>
+    <StyledMenu id="navbar" >
+         <a href="#start" style={{display: "inline-flex", maxHeight: "20vmin"}}>
+            <NavLogo src={logo} alt="Pohlfolio Logo" />
+          </a>  
       <StyledUL>
       
         <StyledLi style={{padding: '0px', marginBottom: '10px'}}>
-          <a href="#start">
-            <NavLogo src={logo} alt="Pohlfolio Logo" />
-          </a>  
         </StyledLi>
         <StyledLi>
           <StyledLink href="#start">

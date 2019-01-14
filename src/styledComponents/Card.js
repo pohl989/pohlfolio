@@ -75,9 +75,9 @@ export const WelcomeCard  = styled(Card)`
     `
   }
   ${media.tablet`
-    background: pink;
     margin: 5px 7px;
     width: 90wh;
+    height: 70vh;
     justify-content: space-evenly;
     `
   }
