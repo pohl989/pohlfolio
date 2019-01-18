@@ -9,7 +9,7 @@ const App = () => (
   <div>
     <WelcomeScreen style={{padding: "50px"}} />
     <NavBar />
-    <div id={"start"} style={{paddingTop: '120px'}}>
+    <div id={"start"} style={{paddingTop: '90px'}}>
       <Route exact path="/" component={Home} />
     </div>
   </div>
