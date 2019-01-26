@@ -3,8 +3,9 @@ import React, { Component } from 'react';
 import { withRouter } from 'react-router-dom';
 
 import styled from 'styled-components'
-import { media } from '../styledComponents/Defaults'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 
+import { media } from '../styledComponents/Defaults'
 import logo from '../images/Pohl989_logo.png'
 
 const StyledMenu = styled.nav`
@@ -61,6 +62,7 @@ const StyledLi = styled.li`
 }
 `
 
+
 const NavLogo = styled.img`
   width: 80px;
   display: block; 
@@ -76,12 +78,16 @@ const StyledLink = styled.a`
   color: #4183c4;
 `
 
+const StyledLinkIcon = styled(StyledLink)`
+  color: green;
+`
+
 class NavBar extends Component {
 
 render() {
   return  (
     <StyledMenu id="navbar" >
-         <a href="#start" style={{display: "inline-flex", maxHeight: "60px"}}>
+         <a href="#start" style={{display: "inline-flex", maxHeight: "60px", marginLeft: "2vw"}}>
             <NavLogo src={logo} alt="Pohlfolio Logo" />
           </a>  
       <StyledUL>
@@ -99,6 +105,26 @@ render() {
           </StyledLink>
         </StyledLi>
       </StyledUL>
+      <StyledLinkIcon href="www.githhub.com/pohl989" >
+        <a 
+            target="_blank"  
+            rel="noopener noreferrer"
+            href={"https://www.github.com/pohl989"} 
+            style={{textDecoration: "none", display: "flex", alignItems: "center", flexGrow: "1",maxWidth: "400px"}} 
+          >
+            <FontAwesomeIcon icon={['fab', 'github']} size="3x" />
+        </a>
+      </StyledLinkIcon>
+      <StyledLink href="#about" >
+        <a 
+            target="_blank"  
+            rel="noopener noreferrer"
+            href={"https://www.linkedin.com/in/pohl989/"} 
+            style={{textDecoration: "none", display: "flex", alignItems: "center", flexGrow: "1",maxWidth: "400px"}} 
+          >
+            <FontAwesomeIcon icon={['fab', 'linkedin']} size="3x" />
+        </a>
+      </StyledLink>
     </StyledMenu>
   );
   }
