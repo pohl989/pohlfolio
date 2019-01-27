@@ -80,6 +80,7 @@ const StyledLink = styled.a`
 
 const StyledLinkIcon = styled(StyledLink)`
   color: green;
+
 `
 
 class NavBar extends Component {
@@ -105,26 +106,28 @@ render() {
           </StyledLink>
         </StyledLi>
       </StyledUL>
-      <StyledLinkIcon href="www.githhub.com/pohl989" >
-        <a 
-            target="_blank"  
-            rel="noopener noreferrer"
-            href={"https://www.github.com/pohl989"} 
-            style={{textDecoration: "none", display: "flex", alignItems: "center", flexGrow: "1",maxWidth: "400px"}} 
-          >
-            <FontAwesomeIcon icon={['fab', 'github']} size="3x" />
-        </a>
-      </StyledLinkIcon>
-      <StyledLink href="#about" >
-        <a 
-            target="_blank"  
-            rel="noopener noreferrer"
-            href={"https://www.linkedin.com/in/pohl989/"} 
-            style={{textDecoration: "none", display: "flex", alignItems: "center", flexGrow: "1",maxWidth: "400px"}} 
-          >
-            <FontAwesomeIcon icon={['fab', 'linkedin']} size="3x" />
-        </a>
-      </StyledLink>
+        <div style={{display: "inline-flex", float: "right", height: "auto", paddingRight: "2vw"}}>
+          <div>
+            <a 
+                target="_blank"  
+                rel="noopener noreferrer"
+                href={"https://www.github.com/pohl989"} 
+                style={{textDecoration: "none", display: "flex", alignItems: "center", flexGrow: "1",maxWidth: "400px"}} 
+              >
+                <FontAwesomeIcon icon={['fab', 'github']} size="3x" style={{padding: "15px 5px"}} color="#4183c4" />
+            </a>
+          </div>
+          <div >
+            <a 
+                target="_blank"  
+                rel="noopener noreferrer"
+                href={"https://www.linkedin.com/in/pohl989/"} 
+                style={{textDecoration: "none", display: "flex", alignItems: "center", flexGrow: "1",maxWidth: "400px"}} 
+              >
+                <FontAwesomeIcon icon={['fab', 'linkedin']} size="3x"  style={{padding: "15px 5px"}} color="#4183c4" />
+            </a>
+          </div>
+        </div>
     </StyledMenu>
   );
   }
