@@ -37,7 +37,6 @@ const StyledUL = styled.ul`
   text-transform: uppercase;
   font-size: 16px;
   font-weight: 700;
-  color: #fff;
   padding: 0px;
   text-decoration: none;
   cursor: pointer;

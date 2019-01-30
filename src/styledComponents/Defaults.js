@@ -11,6 +11,7 @@ export const colors = {
   mineShaft: "#222222",
   neonGreen: "#9fcf6e",
   malibu: "#5cafff",
+  pink: "#d28492",
   orange: "#ff5722",
   black: "#000",
   white: "#fff",

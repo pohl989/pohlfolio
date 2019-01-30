@@ -3,6 +3,8 @@ import { Route } from 'react-router-dom';
 import Home from './components/Home';
 import NavBar from './components/NavBar';
 import WelcomeScreen from './components/WelcomeScreen';
+import Footer from './components/Footer';
+
 import { library } from '@fortawesome/fontawesome-svg-core'
 import { faIgloo } from '@fortawesome/free-solid-svg-icons'
 import { faGithub, faLinkedin } from '@fortawesome/free-brands-svg-icons'
@@ -16,6 +18,7 @@ const App = () => (
     <div id={"start"} style={{paddingTop: '90px'}}>
       <Route exact path="/" component={Home} />
     </div>
+    <Footer />
   </div>
 );
 
