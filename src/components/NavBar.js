@@ -2,7 +2,7 @@
 import React, { Component } from 'react';
 import { withRouter } from 'react-router-dom';
 
-import styled, { keyframes } from 'styled-components'
+import styled from 'styled-components'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 
 import { media, colors } from '../styledComponents/Defaults'
@@ -62,7 +62,6 @@ const StyledLi = styled.li`
 }
 `
 
-
 const NavLogo = styled.img`
   width: 80px;
   display: block; 
@@ -81,7 +80,6 @@ const StyledLink = styled.a`
   }
 `
 
-
 const MyFontAwesomeIcon = styled(FontAwesomeIcon)`
   padding: 15px 5px;
   a:hover & {
@@ -96,28 +94,18 @@ class NavBar extends Component {
   }
 
   logoHeader = (hover) => {
-    if (hover) {
-      return (
-        <a href="#start" style={{display: "inline-flex", maxHeight: "60px", marginLeft: "2vw"}}>
-          <NavLogo src={logo} alt="Pohlfolio Logo" />
-        </a>        
-      )
-    } else {
-      return (
-        <a href="#start" style={{display: "inline-flex", maxHeight: "60px", marginLeft: "2vw"}}>
-          <NavLogo src={logoGreen} alt="Pohlfolio Logo" />
-        </a>  
-      )
-    }
+    return ( hover ? <NavLogo src={logo} alt="Pohlfolio Logo" /> : <NavLogo src={logoGreen} alt="Pohlfolio Logo" />)
   }
 
   render() {
+    const { navHover } = this.state
     return  (
       <StyledMenu id="navbar" >
-          {this.logoHeader(this.state.navHover)}
+          <a href="#start" style={{display: "inline-flex", maxHeight: "60px", marginLeft: "2vw"}}>
+            {this.logoHeader(navHover)}
+          </a>  
         <StyledUL>        
-          <StyledLi style={{padding: '0px', marginBottom: '10px'}}>
-          </StyledLi>
+          <StyledLi style={{padding: '0px', marginBottom: '10px'}}/>
           <StyledLi>
             <StyledLink href="#start">
               Projects
@@ -132,28 +120,28 @@ class NavBar extends Component {
           <div style={{display: "inline-flex", float: "right", height: "auto", paddingRight: "2vw"}}>
             <div>
               <a 
-                  target="_blank"  
-                  rel="noopener noreferrer"
-                  href={"https://www.github.com/pohl989"} 
-                  style={{textDecoration: "none", display: "flex", alignItems: "center", flexGrow: "1",maxWidth: "400px"}} 
-                >
-                  <MyFontAwesomeIcon icon={['fab', 'github']} size="3x" style={{padding: "15px 5px"}} color="#4183c4" onMouseEnter={this.githubHover} />
+                target="_blank"  
+                rel="noopener noreferrer"
+                href="https://www.github.com/pohl989"
+                style={{textDecoration: "none", display: "flex", alignItems: "center", flexGrow: "1",maxWidth: "400px"}} 
+              >
+                <MyFontAwesomeIcon icon={['fab', 'github']} size="3x" style={{padding: "15px 5px"}} color="#4183c4" onMouseEnter={this.githubHover} />
               </a>
             </div>
             <div >
               <a 
-                  target="_blank"  
-                  rel="noopener noreferrer"
-                  href={"https://www.linkedin.com/in/pohl989/"} 
-                  style={{textDecoration: "none", display: "flex", alignItems: "center", flexGrow: "1",maxWidth: "400px"}} 
-                >
-                  <MyFontAwesomeIcon icon={['fab', 'linkedin']} size="3x" color="#4183c4" />
+                target="_blank"  
+                rel="noopener noreferrer"
+                href="https://www.linkedin.com/in/pohl989/"
+                style={{textDecoration: "none", display: "flex", alignItems: "center", flexGrow: "1",maxWidth: "400px"}} 
+              >
+                <MyFontAwesomeIcon icon={['fab', 'linkedin']} size="3x" color="#4183c4" />
               </a>
             </div>
           </div>
       </StyledMenu>
     );
-    }
+  }
 }
 
 

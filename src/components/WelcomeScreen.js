@@ -1,10 +1,10 @@
-import React, { Component } from 'react';
+import React from 'react';
 import styled from 'styled-components'
-import Header from '../styledComponents/Header.js'
+import Header from '../styledComponents/Header'
 import logo from '../images/Pohl989_logo.png'
 import Background from '../images/dark-gravel.png'
-import { WelcomeCard } from '../styledComponents/Card.js'
-import { BetterButton } from '../styledComponents/Button.js'
+import { WelcomeCard } from '../styledComponents/Card'
+import { BetterButton } from '../styledComponents/Button'
 
 const WelcomeBackground = styled.div`
   background-image: url(${Background});
@@ -25,23 +25,22 @@ const WelcomeLogo = styled.img`
 `
 
 
-class WelcomeScreen extends Component {
+function WelcomeScreen() {
 
-  render(){
-    return(
-      <WelcomeBackground>
-        <WelcomeCard>
-          <WelcomeLogo alt="Pohlfolio Logo" src={logo} size='small' style={{marginBottom: "15px", width: "150px", height: "auto", display: "block", position: "relative", marginRight: "auto", marginLeft: "auto"}}/>
-          <Header size={"large"} align={"center"}>Hello, I'm Ben Pohl.</Header> 
-          <Header align={"center"} style={{marginBottom: '40px'}}>I'm a Rails + React Developer</Header>
-          <a href="#start">
-            <BetterButton color={'malibu'}>View my work</BetterButton>
-          </a>
-        </WelcomeCard>
-      </WelcomeBackground>
+  return(
+    <WelcomeBackground>
+      <WelcomeCard>
+        <WelcomeLogo alt="Pohlfolio Logo" src={logo} size='small' style={{marginBottom: "15px", width: "150px", height: "auto", display: "block", position: "relative", marginRight: "auto", marginLeft: "auto"}}/>
+        <Header size="large" align="center">Hello, I&apos;m Ben Pohl.</Header> 
+        <Header align="center" style={{marginBottom: '40px'}}>I&apos;m a Rails + React Developer</Header>
+        <a href="#start">
+          <BetterButton color='malibu'>View my work</BetterButton>
+        </a>
+      </WelcomeCard>
+    </WelcomeBackground>
 
-    )
-  }
+  )
+  
 }
  
 export default WelcomeScreen
