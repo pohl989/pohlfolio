@@ -23,7 +23,7 @@ const StyledMenu = styled.nav`
   position: sticky;
   top: 0;
   z-index:1;
-  ${media.phone`
+  ${media.tablet`
     height: 70px;
     `
   }
@@ -42,7 +42,7 @@ const StyledUL = styled.ul`
   cursor: pointer;
   letter-spacing: 3px;
   justify-content: flex-end;
-  ${media.phone`
+  ${media.tablet`
     font-size: 12px;
     justify-content: center;
   `
@@ -55,7 +55,7 @@ const StyledLi = styled.li`
   list-style: none;
   padding: 30px 20px;
   align-self: flex-end;
-  ${media.phone`
+  ${media.tablet`
     font-size: 12px;
     display: none;
   `
@@ -67,7 +67,7 @@ const NavLogo = styled.img`
   display: block; 
   height: auto;
   position: relative;
-  ${media.phone`
+  ${media.tablet`
     width: 70px;
     `
 }
