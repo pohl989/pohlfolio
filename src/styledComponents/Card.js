@@ -16,7 +16,7 @@ export const Cards = styled.div`
 
 export const Card = styled.div`
   width: 80%;
-  border: 5px solid ${colors.neonGreen};
+  border: 5px solid ${colors.pink};
   border-radius: ${borderRadius};
   margin: 20px 10px;
   transition: 0.6s;

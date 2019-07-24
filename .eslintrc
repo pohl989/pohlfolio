@@ -1,6 +1,5 @@
 {
   "extends": ["airbnb", "prettier", "prettier/react"],
-  "plugins": ["prettier"],
   "rules": {
     "react/jsx-filename-extension": [
       1,
@@ -22,5 +21,7 @@
     "Blob": true,
     "navigator": true
   },
-  "parser": "babel-eslint"
+  "parser": "babel-eslint",
+  "plugins": ["prettier"]
+
 }
