@@ -47,7 +47,7 @@ class Home extends Component {
         imageUrl: memory, 
         subTitle: "JQuery mini app",
         description: "I decided to make a Drag Queen Memory Game with JQuery. Because... why not? The world needed this.", 
-        link: "https://github.com/pohl989/memory-game" 
+        link: "https://drag-memory-game.netlify.com/" 
       },
     ], 
     aboutMe: "Hello, I'm Ben Pohl. I'm a Rails + React Developer. Creating great user experiences is a passion of mine. When I know that I am building something that solves a problem for someone it makes my day. I love the work that I do as a developer. Every day I get to sit in front of code and make the world a better place."
