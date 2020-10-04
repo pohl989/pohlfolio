@@ -45,9 +45,9 @@ class Home extends Component {
         id: 4, 
         title: "Drag Queen Memory Game", 
         imageUrl: memory, 
-        subTitle: "JQuery mini app",
-        description: "I decided to make a Drag Queen Memory Game with JQuery. Because... why not? The world needed this.", 
-        link: "https://drag-memory-game.netlify.com/" 
+        subTitle: "Vue App",
+        description: "I decided to make a Drag Queen Memory Game with Vue. Because... why not? The world needed this. It is just a funny little thing to play when you have that awkward amount of time.", 
+        link: "https://memory.pohlfolio.com/" 
       },
     ], 
     aboutMe: "Hello, I'm Ben Pohl. I'm a Rails + React Developer. Creating great user experiences is a passion of mine. When I know that I am building something that solves a problem for someone it makes my day. I love the work that I do as a developer. Every day I get to sit in front of code and make the world a better place."
