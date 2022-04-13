@@ -8,11 +8,11 @@ import { BetterButton } from '../styledComponents/Button'
 
 const WelcomeBackground = styled.div`
   background-image: url(${Background});
-  height: 100vh
-  overflow: auto
-  display: flex
-  justify-content: center
-  align-items: center`
+  height: 100vh;
+  overflow: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;`
 
 const WelcomeLogo = styled.img`
   margin-bottom: "15px";
