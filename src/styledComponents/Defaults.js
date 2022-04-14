@@ -1,21 +1,21 @@
-import { css } from 'styled-components'
+import {css} from 'styled-components';
 
 const sizes = {
   giant: 1824,
   desktop: 1117,
   tablet: 768,
   phone: 376,
-}
+};
 
 export const colors = {
-  mineShaft: "#222222",
-  neonGreen: "#9fcf6e",
-  malibu: "#5cafff",
-  pink: "#d28492",
-  orange: "#ff5722",
-  black: "#000",
-  white: "#fff",
-}
+  mineShaft: '#222222',
+  neonGreen: '#9fcf6e',
+  malibu: '#5cafff',
+  pink: '#d28492',
+  orange: '#ff5722',
+  black: '#000',
+  white: '#fff',
+};
 
 // iterate through the sizes and create a media template
 export const media = Object.keys(sizes).reduce((accumulator, label) => {
@@ -26,6 +26,6 @@ export const media = Object.keys(sizes).reduce((accumulator, label) => {
     @media (max-width: ${sizes[label]}px) {
       ${css(...args)};
     }
-  `
-  return accumulator
-}, {})
+  `;
+  return accumulator;
+}, {});

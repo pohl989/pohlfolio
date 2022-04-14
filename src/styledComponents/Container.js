@@ -1,5 +1,5 @@
-import styled from 'styled-components'
-import { media } from './Defaults'
+import styled from 'styled-components';
+import {media} from './Defaults';
 
 
 export const Container = styled.div`
@@ -12,23 +12,23 @@ export const Container = styled.div`
     margin-left: auto !important;
     margin-right: auto !important; 
     `
-  }
+}
   ${media.desktop`
     width: 900px;
     margin-left: auto !important;
     margin-right: auto !important;
     `
-  }
+}
   ${media.tablet`
     width: 90% !important;
     margin-left: auto !important;
     margin-right: auto !important;
     `
-  }
+}
   ${media.phone`
     width: 95% !important;
     margin-left: auto !important;
     margin-right: auto !important;
     `
-  }  
-  `
+}  
+  `;

@@ -1,10 +1,10 @@
-import styled from 'styled-components'
-import { media, colors } from './Defaults'
+import styled from 'styled-components';
+import {media, colors} from './Defaults';
 
-const cardShadow = "inset 3px 4px 5px #000, 5px 6px 7px rgba(0, 0, 0, .3), inset 1px 2px 3px #fff"
-const cardShadow2 = "inset 3px 4px 5px rgba(45, 45, 45, .2)"
+const cardShadow = 'inset 3px 4px 5px #000, 5px 6px 7px rgba(0, 0, 0, .3), inset 1px 2px 3px #fff';
+const cardShadow2 = 'inset 3px 4px 5px rgba(45, 45, 45, .2)';
 
-const borderRadius = ".8em;"
+const borderRadius = '.8em;';
 
 export const Cards = styled.div`
   justify-content: space-evenly;
@@ -12,7 +12,7 @@ export const Cards = styled.div`
   flex-wrap: wrap;
   box-sizing: border-box;
   align-items: stretch;
-`
+`;
 
 export const Card = styled.div`
   width: 80%;
@@ -20,9 +20,9 @@ export const Card = styled.div`
   border-radius: ${borderRadius};
   margin: 20px 10px;
   transition: 0.6s;
-`
+`;
 
-export const ProjectCard  = styled(Card)`
+export const ProjectCard = styled(Card)`
   height: 90%;
   width: 100%;
   background-color: rgb(34,34,34);
@@ -41,7 +41,7 @@ export const ProjectCard  = styled(Card)`
   &:hover{
     border: 8px solid ${colors.malibu};
   }
-`
+`;
 
 export const TextCard = styled(Card)`
   background-color: rgba(256, 256, 256, 0.1);
@@ -54,7 +54,7 @@ export const TextCard = styled(Card)`
   font-size: '1.6em';
   box-sizing: inherit;
   display: flex;
-`
+`;
 
 export const ProjectImage = styled.img`
   width: 100%;
@@ -63,8 +63,8 @@ export const ProjectImage = styled.img`
   box-shadow: ${cardShadow2};
   border-top-right-radius: .4em;
   border-top-left-radius: .4em;
-`
-export const WelcomeCard  = styled(Card)`
+`;
+export const WelcomeCard = styled(Card)`
   position: center;
   background-color: rgb(34,34,34);
   flex-direction: column;
@@ -73,12 +73,12 @@ export const WelcomeCard  = styled(Card)`
   ${media.desktop`
     margin: 20%;
     `
-  }
+}
   ${media.tablet`
     margin: 5px 7px;
     width: 90wh;
     height: 60vh;
     justify-content: space-evenly;
     `
-  }
-`
+}
+`;

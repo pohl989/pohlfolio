@@ -29,6 +29,10 @@
     "not ie <= 11",
     "not op_mini all"
   ],
-  "devDependencies": {},
-  "precommit": "NODE_ENV=production lint-staged"
+  "devDependencies": {
+    "eslint": "^8.13.0",
+    "eslint-config-google": "^0.14.0",
+    "eslint-plugin-react": "^7.29.4"
+  },
+  "precommit": "NODE_ENV=production lint-staged" 
 }
