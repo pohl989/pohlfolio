@@ -14,9 +14,9 @@ code {
     monospace;
 }
 
-/* %h3 {
-  color: white;
-} */
+html {
+  scroll-behavior: smooth;
+}
 
 ::selection {
   background-color: pink !important;

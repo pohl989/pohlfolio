@@ -1,6 +1,5 @@
 import styled from 'styled-components'
-import {colors} from './Defaults'
-
+import {colors, media} from './Defaults'
 
 export const BetterButton = styled.button`
   background-color: transparent;
@@ -17,7 +16,7 @@ export const BetterButton = styled.button`
   vertical-align: baseline;
   font-family: Lato,'Helvetica Neue',Arial,Helvetica,sans-serif;
   margin: 0 .25em 0 0;
-  padding: .78571429em 1.5em .78571429em;
+  padding: .60em 1.5em .60em;
   text-transform: none;
   font-weight: 700;
   line-height: 1em;
@@ -25,7 +24,7 @@ export const BetterButton = styled.button`
   text-align: center;
   text-decoration: none;
   border-radius: .9rem;
-  font-size: 100%;
+  font-size: 90%;
   float: right;
   &:hover{
     background: ${(props) => colors[props.color]};
@@ -34,4 +33,12 @@ export const BetterButton = styled.button`
     text-shadow: 1px 1px 1px #ddd;
     box-shadow: "inset 3px 4px 5px #ddd, 5px 6px 7px rgba(240, 240, 240, .3), inset 1px 2px 3px #222222"
   }
+  ${media.tablet`
+    font-size: 100%;
+    padding: .60em;
+    `}
+    ${media.desktop`
+    font-size: 100%;
+    padding: .60em;
+    `}
 `
