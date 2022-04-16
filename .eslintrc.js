@@ -19,6 +19,9 @@ module.exports = {
     'react',
   ],
   'rules': {
+    'no-unused-vars': ['warn',
+    ],
+    'semi': ['error', 'never'],
     'require-jsdoc': ['error', {
       'require': {
         'FunctionDeclaration': false,
@@ -39,4 +42,4 @@ module.exports = {
       'flowVersion': '0.53',
     },
   },
-};
+}

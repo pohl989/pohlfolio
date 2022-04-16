@@ -1,8 +1,8 @@
 
-import member from './images/cnsrvit_member.png';
-import tablebooking from './images/tablebooking.png';
-import flashcards from './images/flash_cards.png';
-import memory from './images/memory.png';
+import member from './images/cnsrvit_member.png'
+import tablebooking from './images/tablebooking.png'
+import flashcards from './images/flash_cards.png'
+import memory from './images/memory.png'
 
 const featureProjects = [
   {
@@ -34,9 +34,12 @@ const featureProjects = [
     title: 'Drag Queen Memory Game',
     imageUrl: memory,
     subTitle: 'Vue App',
-    description: 'I decided to make a Drag Queen Memory Game with Vue. Because... why not? The world needed this. It is just a funny little thing to play when you have that awkward amount of time.',
+    description:
+      `I decided to make a Drag Queen Memory Game with Vue. 
+      Because... why not? The world needed this. 
+      It is just a funny little thing to play when you have that awkward amount of time.`,
     link: 'https://memory.pohlfolio.com/',
   },
-];
+]
 
-export default featureProjects;
+export default featureProjects

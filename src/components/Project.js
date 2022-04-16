@@ -1,6 +1,6 @@
-import React from 'react';
-import {ProjectCard, ProjectImage} from '../styledComponents/Card';
-import PropTypes from 'prop-types';
+import React from 'react'
+import {ProjectCard, ProjectImage} from '../styledComponents/Card'
+import PropTypes from 'prop-types'
 
 function Project( {title, description, subTitle, imageUrl, link}) {
   return (
@@ -55,7 +55,7 @@ function Project( {title, description, subTitle, imageUrl, link}) {
         </ProjectCard>
       </a>
     </>
-  );
+  )
 }
 
 Project.propTypes = {
@@ -64,6 +64,6 @@ Project.propTypes = {
   subTitle: PropTypes.string.isRequired,
   imageUrl: PropTypes.string.isRequired,
   link: PropTypes.string.isRequired,
-};
+}
 
-export default Project;
+export default Project

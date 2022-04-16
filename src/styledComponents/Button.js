@@ -1,5 +1,5 @@
-import styled from 'styled-components';
-import {colors} from './Defaults';
+import styled from 'styled-components'
+import {colors} from './Defaults'
 
 
 export const BetterButton = styled.button`
@@ -31,7 +31,7 @@ export const BetterButton = styled.button`
     background: ${(props) => colors[props.color]};
     color: #222222;
     font-weight: 900;
-    text-shadow: 1px 1px 1px #ddd
+    text-shadow: 1px 1px 1px #ddd;
     box-shadow: "inset 3px 4px 5px #ddd, 5px 6px 7px rgba(240, 240, 240, .3), inset 1px 2px 3px #222222"
   }
-`;
+`

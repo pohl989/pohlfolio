@@ -1,17 +1,17 @@
-import React from 'react';
-import './App.css';
-import {Route} from 'react-router-dom';
+import React from 'react'
+import './App.css'
+import {Route} from 'react-router-dom'
 
-import {library} from '@fortawesome/fontawesome-svg-core';
-import {faIgloo} from '@fortawesome/free-solid-svg-icons';
-import {faGithub, faLinkedin} from '@fortawesome/free-brands-svg-icons';
+import {library} from '@fortawesome/fontawesome-svg-core'
+import {faIgloo} from '@fortawesome/free-solid-svg-icons'
+import {faGithub, faLinkedin} from '@fortawesome/free-brands-svg-icons'
 
-import NavBar from './components/NavBar';
-import Home from './components/Home';
-import WelcomeScreen from './components/WelcomeScreen';
-import Footer from './components/Footer';
+import NavBar from './components/NavBar'
+import Home from './components/Home'
+import WelcomeScreen from './components/WelcomeScreen'
+import Footer from './components/Footer'
 
-library.add(faIgloo, faGithub, faLinkedin);
+library.add(faIgloo, faGithub, faLinkedin)
 
 const App = () => (
   <div>
@@ -22,6 +22,6 @@ const App = () => (
     </div>
     <Footer />
   </div>
-);
+)
 
-export default App;
+export default App

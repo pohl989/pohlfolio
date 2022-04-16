@@ -1,13 +1,13 @@
 
-import React, {Component} from 'react';
-import {withRouter} from 'react-router-dom';
+import React, {Component} from 'react'
+import {withRouter} from 'react-router-dom'
 
-import styled from 'styled-components';
-import {FontAwesomeIcon} from '@fortawesome/react-fontawesome';
+import styled from 'styled-components'
+import {FontAwesomeIcon} from '@fortawesome/react-fontawesome'
 
-import {media, colors} from '../styledComponents/Defaults';
-import logo from '../images/Pohl989_logo.png';
-import logoGreen from '../images/Pohl989_logo_green.png';
+import {media, colors} from '../styledComponents/Defaults'
+import logo from '../images/Pohl989_logo.png'
+import logoGreen from '../images/Pohl989_logo_green.png'
 
 const StyledMenu = styled.nav`
   box-shadow: 2px 3px 4px rgba(45,45,45,0.6), inset 2px 3px 4px rgba(45,45,45,0.9);
@@ -27,7 +27,7 @@ const StyledMenu = styled.nav`
     height: 70px;
     `
 }
-`;
+`
 
 const StyledUL = styled.ul`
   list-style: none;
@@ -47,7 +47,7 @@ const StyledUL = styled.ul`
     justify-content: center;
   `
 }
-`;
+`
 const StyledLi = styled.li`
   flex: 0 1 auto;
   display: inline-flex;
@@ -60,7 +60,7 @@ const StyledLi = styled.li`
     display: none;
   `
 }
-`;
+`
 
 const NavLogo = styled.img`
   width: 80px;
@@ -71,33 +71,33 @@ const NavLogo = styled.img`
     width: 70px;
     `
 }
-`;
+`
 const StyledLink = styled.a`
   text-decoration: none;
   color: #4183c4;
   :hover {
     color: ${colors.neonGreen};
   }
-`;
+`
 
 const MyFontAwesomeIcon = styled(FontAwesomeIcon)`
   padding: 15px 5px;
   a:hover & {
     color: ${colors.neonGreen};
   }
-  `;
+  `
 
 class NavBar extends Component {
   state = {
     navHover: true,
-  };
+  }
 
   logoHeader = (hover) => {
-    return ( hover ? <NavLogo src={logo} alt="Pohlfolio Logo" /> : <NavLogo src={logoGreen} alt="Pohlfolio Logo" />);
-  };
+    return ( hover ? <NavLogo src={logo} alt="Pohlfolio Logo" /> : <NavLogo src={logoGreen} alt="Pohlfolio Logo" />)
+  }
 
   render() {
-    const {navHover} = this.state;
+    const {navHover} = this.state
     return (
       <StyledMenu id="navbar" >
         <a href="#start" style={{display: 'inline-flex', maxHeight: '60px', marginLeft: '2vw'}}>
@@ -139,9 +139,9 @@ class NavBar extends Component {
           </div>
         </div>
       </StyledMenu>
-    );
+    )
   }
 }
 
 
-export default withRouter(NavBar);
+export default withRouter(NavBar)

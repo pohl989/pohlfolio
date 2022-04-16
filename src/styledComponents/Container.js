@@ -1,5 +1,5 @@
-import styled from 'styled-components';
-import {media} from './Defaults';
+import styled from 'styled-components'
+import {media} from './Defaults'
 
 
 export const Container = styled.div`
@@ -31,4 +31,4 @@ export const Container = styled.div`
     margin-right: auto !important;
     `
 }  
-  `;
+  `

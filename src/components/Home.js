@@ -1,21 +1,21 @@
-import React, {Component} from 'react';
-import {Cards, TextCard} from '../styledComponents/Card';
-import {Container} from '../styledComponents/Container';
-import {colors} from '../styledComponents/Defaults';
-import Project from './Project';
+import React, {Component} from 'react'
+import {Cards, TextCard} from '../styledComponents/Card'
+import {Container} from '../styledComponents/Container'
+import {colors} from '../styledComponents/Defaults'
+import Project from './Project'
 
 // import bioPhoto from '../images/bio.png'
-import featuredProjects from '../featured-projects';
+import featuredProjects from '../featured-projects'
 
 const styles = {
 
-};
+}
 class Home extends Component {
   state = {
     aboutMe: 'Hello, I\'m Ben Pohl. I\'m a Rails + React Developer. Creating great user experiences is a passion of mine. When I know that I am building something that solves a problem for someone it makes my day. I love the work that I do as a developer. Every day I get to sit in front of code and make the world a better place.',
-  };
+  }
   render() {
-    const {aboutMe} = this.state;
+    const {aboutMe} = this.state
     return (
       <>
         <div className="background-image"style={styles.backgroundStyle}>
@@ -46,8 +46,8 @@ class Home extends Component {
 
       </>
 
-    );
+    )
   }
 }
 
-export default Home;
+export default Home

@@ -1,7 +1,7 @@
 
-import React from 'react';
+import React from 'react'
 
-import {colors} from '../styledComponents/Defaults';
+import {colors} from '../styledComponents/Defaults'
 
 const Footer = () => {
   return (
@@ -25,7 +25,7 @@ const Footer = () => {
         >Built with React</p>
       </div>
     </div>
-  );
-};
+  )
+}
 
-export default Footer;
+export default Footer

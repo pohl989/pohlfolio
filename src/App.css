@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css?family=Gamja+Flower" rel="stylesheet');
-
-
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@500&family=Square+Peg&display=swap');
 .App {
   text-align: center;
 }
@@ -29,6 +29,15 @@
   background-repeat: repeat;
 }
 
+.fade-in {
+  transition: opacity 1s ease;
+}
+
+.fade-out {
+  opacity: 0;
+  transition: opacity 1s ease;
+}
+
 
 @keyframes App-logo-spin {
   from {
@@ -45,4 +54,37 @@ p {
   margin-block-end: 1em;
   margin-inline-start: 0px;
   margin-inline-end: 0px;
+}
+
+.jagged-border {
+  background-image:
+    /* Top jagged */
+    linear-gradient(
+        135deg,
+        rgba(255,255,255,1) 50%, rgba(255,255,255,0) 50%
+    ),
+    linear-gradient(
+        -135deg,
+        rgba(255,255,255,1) 50%, rgba(255,255,255,0) 50%
+    ),
+    /* Bottom jagged */
+    linear-gradient(
+        45deg,
+        rgba(255,255,255,1) 50%, rgba(255,255,255,0) 50%
+    ),
+    linear-gradient(
+        -45deg,
+        rgba(255,255,255,1) 50%, rgba(255,255,255,0) 50%
+    );
+    background-position:
+      /* Top jagged */
+      top center, top center,
+      /* Bottom jagged */
+      bottom center, bottom center;
+    background-size:
+        /* Top + bottom jagged */
+        0.75rem 0.75rem, 0.75rem 0.75rem,
+        0.75rem 0.75rem, 0.75rem 0.75rem;
+    background-repeat: repeat-x;
+
 }

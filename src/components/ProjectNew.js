@@ -1,4 +1,4 @@
-import React from 'react';
+import React from 'react'
 
 function Project( {title, description, subTitle, imageUrl, link}) {
   return (
@@ -50,8 +50,8 @@ function Project( {title, description, subTitle, imageUrl, link}) {
         </div>
       </div>
     </>
-  );
+  )
 }
 
 
-export default Project;
+export default Project
