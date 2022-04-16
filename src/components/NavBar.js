@@ -124,7 +124,12 @@ class NavBar extends Component {
               href="https://www.github.com/pohl989"
               style={{textDecoration: 'none', display: 'flex', alignItems: 'center', flexGrow: '1', maxWidth: '400px'}}
             >
-              <MyFontAwesomeIcon icon={['fab', 'github']} size="3x" style={{padding: '15px 5px'}} color="#4183c4" onMouseEnter={this.githubHover} />
+              <MyFontAwesomeIcon
+                icon={['fab', 'github']}
+                size="3x"
+                style={{padding: '15px 5px'}}
+                color="#4183c4"
+                onMouseEnter={this.githubHover} />
             </a>
           </div>
           <div >
