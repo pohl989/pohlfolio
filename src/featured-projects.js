@@ -9,7 +9,9 @@ const featureProjects = [
     id: 1,
     title: 'CNSRVIT',
     imageUrl: member,
-    description: 'Developed solutions for project management, invoicing, member management',
+    description: `Developed Ruby on Rails solutions for project management, invoicing, 
+                member management.
+                `,
     subTitle: 'Full Stack Rails Web Suite',
     link: 'https://cnsrvit.usaconservation.org/',
   },

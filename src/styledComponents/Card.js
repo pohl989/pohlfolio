@@ -67,13 +67,17 @@ export const TextCard = styled(Card)`
   background-color: rgba(256, 256, 256, 0.1);
   box-shadow: ${cardShadow};
   color: ${colors.white};
-  width: 100%;
   padding: 20px 20px;
   text-align: left;
   font-family: 'Roßboto Mono', monospace;
-  font-size: '1.6em';
+  font-size: 1.2rem;
   box-sizing: inherit;
   display: flex;
+  width: 100%;
+  flex-direction: row;
+  ${media.tablet`
+    flex-direction: column;
+  `}
 `
 
 export const ProjectImage = styled.img`

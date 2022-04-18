@@ -15,13 +15,15 @@ export const Cards = styled.div`
   box-sizing: border-box;
   align-items: stretch;
 `
-const aboutMe =
+const aboutMeOne =
     `Hello, I\'m Ben Pohl. 
-    I\'m a Rails + React Developer. 
-    Creating great user experiences is a passion of mine. 
-    When I know that I am building something that solves a problem for someone it makes my day. 
-    I love the work that I do as a developer. 
-    Every day I get to sit in front of code and make the world a better place.`
+    I\'m a fullstack Developer. I love the problem solving aspect of the job. I love a new challenge whether is it 
+    on the backend writing a new service, delayed job, or rake task. I also enjoy working on the front end creating 
+    a solid component structure, dyanmic form validations, or creating that perfect transition`
+
+const aboutMeTwo =
+    `My current day to day tech stack includes, Ruby on Rails, Vue and React. In my current position I write code for a internal system
+    that manages federal contracts, projects, invoices, and members.`
 
 function Home() {
   return (
@@ -45,8 +47,12 @@ function Home() {
           <Cards>
             <TextCard>
               <p
-                style={{fontSize: '1.5em'}}>
-                { aboutMe }
+                style={{margin: '20px'}}>
+                { aboutMeOne }
+              </p>
+              <p
+                style={{margin: '20px'}}>
+                { aboutMeTwo }
               </p>
             </TextCard>
           </Cards>
