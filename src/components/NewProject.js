@@ -1,4 +1,4 @@
-import React from 'react'
+import React, {dangerouslySetInnerHTML} from 'react'
 import PropTypes from 'prop-types'
 
 // ? temp move out once it looks goood
@@ -6,6 +6,11 @@ import styled from 'styled-components'
 const cardShadow2 = 'inset 3px 4px 5px rgba(45, 45, 45, .2)'
 import {colors, media} from '../styledComponents/Defaults'
 const borderRadius = '.8em;'
+
+// ? never to be used with external content
+function createMarkup(markup) {
+  return {__html: markup}
+}
 
 const ProjectImageContainer = styled.div`
   min-width:300px;
@@ -111,11 +116,12 @@ function NewProject( {title, description, subTitle, imageUrl}) {
           clear: 'both',
         }}
         >
-          <p style={{
-            fontSize: '1.2rem',
-            fontFamily: '\'Roßboto Mono\', monospace',
-          }}>
-            {description}
+          <p
+            dangerouslySetInnerHTML={createMarkup(description)}
+            style={{
+              fontSize: '1.2rem',
+              fontFamily: '\'Roßboto Mono\', monospace',
+            }}>
           </p>
         </div>
 

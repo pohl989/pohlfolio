@@ -37,6 +37,10 @@
   opacity: 0;
   transition: opacity 1s ease;
 }
+/* #9fcf6e  #d28492 #5cafff*/
+strong {
+  color: #5cafff;
+}
 
 
 @keyframes App-logo-spin {
