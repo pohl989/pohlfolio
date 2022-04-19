@@ -1,4 +1,4 @@
-import React, {dangerouslySetInnerHTML} from 'react'
+import React from 'react'
 import PropTypes from 'prop-types'
 
 // ? temp move out once it looks goood
