@@ -3,19 +3,7 @@ import React from 'react'
 import Header from '../styledComponents/Header'
 import Fader from './Fader'
 import {StyledNameCard} from '../styledComponents/Card'
-
-const roles = [
-  'web developer',
-  'Rails on Rails guy',
-  'problem solver',
-  'JavaScript coder',
-  'pet parent',
-  'React lover',
-  'Marvel geek',
-  'Vue fanatic',
-  'dude who loves to code',
-]
-
+import {roles} from '../content'
 
 const NameCard = () => {
   return (

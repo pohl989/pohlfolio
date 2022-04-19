@@ -5,7 +5,7 @@ import flashcards from './images/flash_cards.png'
 import memory from './images/memory.png'
 import leopold from './images/leopold_work.png'
 
-const featureProjects = [
+export const featuredProjects = [
   {
     id: 1,
     title: 'Project Leopold',
@@ -79,4 +79,27 @@ const featureProjects = [
   },
 ]
 
-export default featureProjects
+
+export const aboutMeOne =
+    `Hello, I\'m <strong>Ben Pohl</strong>. 
+    I\'m a <strong>fullstack Developer</strong>. I love the problem solving aspect of the job. I love a new challenge whether is it 
+    on the backend writing a new service, delayed job, or rake task. I also enjoy working on the front end creating 
+    a solid component structure, dyanmic form validations, or creating that perfect transition`
+
+export const aboutMeTwo =
+    `My current day to day tech stack includes, Ruby on Rails, Vue and React. In my current position I write code for a internal system
+    that manages federal contracts, projects, invoices, and members.`
+
+
+export const roles = [
+  'web developer',
+  'Rails on Rails guy',
+  'problem solver',
+  'JavaScript coder',
+  'pet parent',
+  'React lover',
+  'Marvel geek',
+  'Vue fanatic',
+  'dude who loves to code',
+]
+

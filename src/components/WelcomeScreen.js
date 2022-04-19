@@ -57,7 +57,7 @@ function WelcomeScreen() {
           <BetterButton color='neonGreen' >See my work</BetterButton>
         </a>
         <a href="#about" >
-          <BetterButton color='white' style={{marginRight: '10px'}}>Read About Me</BetterButton>
+          <BetterButton color='white' style={{marginRight: '10px'}}>Read about me</BetterButton>
         </a>
       </ButtonWrapper>
     </WelcomeBackground>

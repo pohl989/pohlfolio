@@ -41,7 +41,7 @@ const Fader = ({texts}) => {
 }
 
 Fader.defaultProps = {
-  texts: ['Joyful'],
+  texts: ['Developer'],
 }
 
 Fader.propTypes = {

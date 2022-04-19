@@ -1,12 +1,17 @@
 import React from 'react'
 import {TextCard} from '../styledComponents/Card'
 import {Container} from '../styledComponents/Container'
-import NewProject from './NewProject'
+import {media} from '../styledComponents/Defaults'
+import Project from './Project'
 import styled from 'styled-components'
 import Header from '../styledComponents/Header'
-
+import {featuredProjects, aboutMeOne, aboutMeTwo} from '../content'
 // import bioPhoto from '../images/bio.png'
-import featuredProjects from '../featured-projects'
+
+// ? never to be used with external content
+function createMarkup(markup) {
+  return {__html: markup}
+}
 
 export const Cards = styled.div`
   justify-content: space-evenly;
@@ -15,15 +20,15 @@ export const Cards = styled.div`
   box-sizing: border-box;
   align-items: stretch;
 `
-const aboutMeOne =
-    `Hello, I\'m Ben Pohl. 
-    I\'m a fullstack Developer. I love the problem solving aspect of the job. I love a new challenge whether is it 
-    on the backend writing a new service, delayed job, or rake task. I also enjoy working on the front end creating 
-    a solid component structure, dyanmic form validations, or creating that perfect transition`
 
-const aboutMeTwo =
-    `My current day to day tech stack includes, Ruby on Rails, Vue and React. In my current position I write code for a internal system
-    that manages federal contracts, projects, invoices, and members.`
+
+const AboutMe = styled.p`
+  margin: 20px; 
+  max-width: 50%;
+ ${media.tablet`
+    max-width: 100%;
+  `}
+`
 
 function Home() {
   return (
@@ -37,7 +42,7 @@ function Home() {
           </span>
           <Cards>
             {featuredProjects.map( (single) =>
-              <NewProject
+              <Project
                 key={ single.id }
                 title={single.title}
                 subTitle={single.subTitle}
@@ -54,14 +59,14 @@ function Home() {
           </span>
           <Cards>
             <TextCard>
-              <p
-                style={{margin: '20px', maxWidth: '50%'}}>
-                { aboutMeOne }
-              </p>
-              <p
-                style={{margin: '20px', maxWidth: '50%'}}>
-                { aboutMeTwo }
-              </p>
+              <AboutMe
+                dangerouslySetInnerHTML={createMarkup(aboutMeOne)}
+              >
+              </AboutMe>
+              <AboutMe
+                dangerouslySetInnerHTML={createMarkup(aboutMeTwo)}
+              >
+              </AboutMe>
             </TextCard>
           </Cards>
         </Container>
