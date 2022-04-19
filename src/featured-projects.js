@@ -22,7 +22,7 @@ const featureProjects = [
     id: 2,
     title: 'CNSRVIT',
     imageUrl: member,
-    description: `Developed Ruby on Rails solutions for project management, invoicing, 
+    description: `Developed <em>Ruby on Rails solutions for project management, invoicing, 
                 member management. I worked on the state machine to help manage the status
                 of objects such as projects, invoices, and users. I also spent time writing 
                 services to generate report data, services to perform complex business logic,
@@ -66,8 +66,8 @@ const featureProjects = [
       Because... why not? The world needed this. 
       It is just a funny little thing to play when you have that awkward amount of time.
       It is best viewed on your phone, while you are awkwardly waiting for your best friend
-      to meet up with you at the bar and you want to pretend to look important. But anyways, the 
-      fun thing about this project is that it focused on something Vue is strong at, transitions and state management`,
+      to meet up with you at the bar. But anyways, the 
+      fun thing about this project is that it focused on something Vue is strong at, transitions and state management.`,
     link: 'https://memory.pohlfolio.com/',
   },
 ]

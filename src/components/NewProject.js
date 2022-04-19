@@ -4,7 +4,7 @@ import PropTypes from 'prop-types'
 // ? temp move out once it looks goood
 import styled from 'styled-components'
 const cardShadow2 = 'inset 3px 4px 5px rgba(45, 45, 45, .2)'
-import {colors} from '../styledComponents/Defaults'
+import {colors, media} from '../styledComponents/Defaults'
 const borderRadius = '.8em;'
 
 const ProjectImageContainer = styled.div`
@@ -13,9 +13,21 @@ const ProjectImageContainer = styled.div`
   min-height: 300px;
   border-top-right-radius: .4em;
   border-bottom-right-radius: .4em;
+  ${media.tablet`
+      width: 100%;
+      min-width: 100%;
+      border-top-right-radius: .4em;
+      border-top-left-radius: .4em;
+      border-bottom-right-radius: 0em;
+    `}
 `
 
 const ProjectImage = styled.img`
+  ${media.tablet`
+    border-top-right-radius: .4em;
+    border-top-left-radius: .4em;
+    border-bottom-right-radius: 0em;
+  `}
   width: 100%;
   height: 100%;
   background-color: rgb(34,34,34);
@@ -24,10 +36,29 @@ const ProjectImage = styled.img`
   border-bottom-right-radius: .4em;
   object-fit: cover; 
   overflow: hidden;
-  object-position: top left; 
+  object-position: top left;
+`
+const NewProjectCardBody = styled.div`
+  ${media.tablet`
+      max-width: 100%;
+    `}
+  flex-grow: 1;
+  border: none;
+  border-top: 1px solid rgba(34,36,38,.1);
+  background: 0 0;
+  margin: 0;
+  padding: 1em 1em;
+  box-shadow: none;
+  font-size: 1em;
+  border-radius: 0;
+  text-decoration: none;
+  max-width: 60%;
 `
 
 const NewProjectCard = styled.div`  
+  ${media.tablet`
+      flex-direction: column;
+    `}
   width: 100%;
   border: 5px solid ${colors.pink};
   border-radius: ${borderRadius};
@@ -49,20 +80,7 @@ function NewProject( {title, description, subTitle, imageUrl}) {
       <ProjectImageContainer>
         <ProjectImage src={imageUrl}/>
       </ProjectImageContainer>
-      <div style={{
-        flexGrow: '1',
-        border: 'none',
-        borderTop: '1px solid rgba(34,36,38,.1)',
-        background: '0 0',
-        margin: '0',
-        padding: '1em 1em',
-        boxShadow: 'none',
-        fontSize: '1em',
-        borderRadius: '0',
-        textDecoration: 'none',
-        maxWidth: '60%',
-      }}
-      >
+      <NewProjectCardBody>
         <div style={{
           fontWeight: '700',
           lineHeight: '1.3rem',
@@ -101,7 +119,7 @@ function NewProject( {title, description, subTitle, imageUrl}) {
           </p>
         </div>
 
-      </div>
+      </NewProjectCardBody>
     </NewProjectCard>
   )
 }
