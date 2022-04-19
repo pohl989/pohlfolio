@@ -15,7 +15,7 @@ export const colors = {
   orange: '#ff5722',
   black: '#000',
   white: '#fff',
-  burgandy: '#973f3f',
+  burgandy: '#ab4a81',
 }
 
 // iterate through the sizes and create a media template
