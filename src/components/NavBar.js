@@ -10,17 +10,14 @@ import logo from '../images/Pohl989_logo.png'
 import logoGreen from '../images/Pohl989_logo_green.png'
 
 const StyledMenu = styled.nav`
-  box-shadow: 2px 3px 4px rgba(45,45,45,0.6), inset 2px 3px 4px rgba(45,45,45,0.9);
-  background-color: rgba(0,0,0,.8) !important;
-  border: 5px solid #555 !important;
-  border-left: 0 !important;
-  border-right: 0 !important;
-  position: absolute !important;
-  border-radius: none !important;
+  background-color: ${colors.burgandy};
+  border-top: 5px solid ${colors.burgandy};
+  border-bottom: 5px solid ${colors.pink};
+  position: absolute;
+  border-radius: none;
   width: 100%;
-  position:sticky !important;  
+  position:sticky;  
   position: -webkit-sticky;
-  position: sticky;
   top: 0;
   z-index:1;
   ${media.tablet`
@@ -74,13 +71,14 @@ const NavLogo = styled.img`
 `
 const StyledLink = styled.a`
   text-decoration: none;
-  color: #4183c4;
+  color: ${colors.white};
   :hover {
     color: ${colors.neonGreen};
   }
 `
 
 const MyFontAwesomeIcon = styled(FontAwesomeIcon)`
+  color: ${colors.white};
   padding: 15px 5px;
   a:hover & {
     color: ${colors.neonGreen};
@@ -128,7 +126,6 @@ class NavBar extends Component {
                 icon={['fab', 'github']}
                 size="3x"
                 style={{padding: '15px 5px'}}
-                color="#4183c4"
                 onMouseEnter={this.githubHover} />
             </a>
           </div>
@@ -139,7 +136,7 @@ class NavBar extends Component {
               href="https://www.linkedin.com/in/pohl989/"
               style={{textDecoration: 'none', display: 'flex', alignItems: 'center', flexGrow: '1', maxWidth: '400px'}}
             >
-              <MyFontAwesomeIcon icon={['fab', 'linkedin']} size="3x" color="#4183c4" />
+              <MyFontAwesomeIcon icon={['fab', 'linkedin']} size="3x" />
             </a>
           </div>
         </div>
