@@ -4,6 +4,7 @@ import {Container} from '../styledComponents/Container'
 import {colors} from '../styledComponents/Defaults'
 import NewProject from './NewProject'
 import styled from 'styled-components'
+import Header from '../styledComponents/Header'
 
 // import bioPhoto from '../images/bio.png'
 import featuredProjects from '../featured-projects'
@@ -30,7 +31,11 @@ function Home() {
     <>
       <div className="background-image">
         <Container >
-          <h2 id="projects" style={{color: `${colors.neonGreen}`}}>Projects</h2>
+          <span id="projects">
+            <Header size="h4" bColor="neonGreen" >
+              Projects
+            </Header>
+          </span>
           <Cards>
             {featuredProjects.map( (single) =>
               <NewProject
@@ -43,15 +48,19 @@ function Home() {
               />,
             )}
           </Cards>
-          <h2 id= "about" style={{color: `${colors.neonGreen}`}}>About Me</h2>
+          <span id="about">
+            <Header size="h4" bColor="neonGreen" >
+              About Me
+            </Header>
+          </span>
           <Cards>
             <TextCard>
               <p
-                style={{margin: '20px'}}>
+                style={{margin: '20px', maxWidth: '50%'}}>
                 { aboutMeOne }
               </p>
               <p
-                style={{margin: '20px'}}>
+                style={{margin: '20px', maxWidth: '50%'}}>
                 { aboutMeTwo }
               </p>
             </TextCard>

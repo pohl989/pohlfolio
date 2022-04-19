@@ -24,7 +24,7 @@ const NameCard = () => {
         <Header size="h1" align="center" font="Obitron" bColor="white">HELLO WORLD!</Header>
       </div>
       <Header align="center" font="Obitron" bColor="white" sub="true">my name is</Header>
-      <Header size="large" align="center" bColor="neonGreen" font="Square Peg" background="white">BEN POHL</Header>
+      <Header size="large" align="center" bColor="neonGreen" font="Square Peg" background="white">Ben Pohl</Header>
       <div style={{padding: '0px 20px'}}>
         <Header align="center" style={{marginBottom: '40px'}} font="Obitron">I&apos;m a <Fader texts={roles}></Fader></Header>
       </div>

@@ -26,11 +26,13 @@ export const StyledNameCard = styled.div`
   padding: 0px;
   background-color: ${colors.pink};
   border-radius: 0.8rem;
-  margin: 1rem;
+  margin: 1.5rem;
+  border: 5px solid ${colors.white};
   min-width: 90%;
   ${media.tablet`
     min-width: 50%;
     max-width: 1000px;
+    border-width: 6px;
     `}
   ${media.desktop`
     min-width: 50%;
