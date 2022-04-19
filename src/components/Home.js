@@ -1,7 +1,6 @@
 import React from 'react'
 import {TextCard} from '../styledComponents/Card'
 import {Container} from '../styledComponents/Container'
-import {colors} from '../styledComponents/Defaults'
 import NewProject from './NewProject'
 import styled from 'styled-components'
 import Header from '../styledComponents/Header'
