@@ -25,6 +25,7 @@ export const Card = styled.div`
 export const StyledNameCard = styled.div`
   padding: 0px;
   background-color: ${colors.pink};
+  background:linear-gradient(217deg, ${colors.pink}, ${colors.burgandy} 70.71%);
   border-radius: 0.8rem;
   margin: 1.5rem;
   border: 5px solid ${colors.white};

@@ -10,9 +10,7 @@ import logo from '../images/Pohl989_logo.png'
 import logoGreen from '../images/Pohl989_logo_green.png'
 
 const StyledMenu = styled.nav`
-  background-color: ${colors.burgandy};
-  border-top: 5px solid ${colors.burgandy};
-  border-bottom: 5px solid ${colors.pink};
+  background:linear-gradient(217deg, ${colors.pink}, ${colors.burgandy} 70.71%);
   position: absolute;
   border-radius: none;
   width: 100%;
@@ -97,7 +95,7 @@ class NavBar extends Component {
   render() {
     const {navHover} = this.state
     return (
-      <StyledMenu id="navbar" >
+      <StyledMenu id="navbar" className="nav-background">
         <a href="#start" style={{display: 'inline-flex', maxHeight: '60px', marginLeft: '2vw'}}>
           {this.logoHeader(navHover)}
         </a>
