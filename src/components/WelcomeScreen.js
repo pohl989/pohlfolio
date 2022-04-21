@@ -54,7 +54,7 @@ function WelcomeScreen() {
       <NameCard />
       <ButtonWrapper>
         <a href="#start">
-          <BetterButton color='neonGreen' >See my work</BetterButton>
+          <BetterButton color='malibu' >See my work</BetterButton>
         </a>
         <a href="#about" >
           <BetterButton color='white' style={{marginRight: '10px'}}>Read about me</BetterButton>
