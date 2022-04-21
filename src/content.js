@@ -93,7 +93,7 @@ export const aboutMeTwo =
 
 export const roles = [
   'web developer',
-  'Rails on Rails guy',
+  'Ruby on Rails guy',
   'problem solver',
   'JavaScript coder',
   'pet parent',
