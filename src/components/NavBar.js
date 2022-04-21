@@ -62,6 +62,7 @@ const NavLogo = styled.img`
   display: block; 
   height: auto;
   position: relative;
+  margin: 2px;
   ${media.tablet`
     width: 70px;
     `
@@ -96,7 +97,7 @@ class NavBar extends Component {
     const {navHover} = this.state
     return (
       <StyledMenu id="navbar" className="nav-background">
-        <a href="#start" style={{display: 'inline-flex', maxHeight: '60px', marginLeft: '2vw'}}>
+        <a href="#start" style={{display: 'inline-flex', maxHeight: '60px', marginLeft: '2vw', marginTop: '5px'}}>
           {this.logoHeader(navHover)}
         </a>
         <StyledUL>
