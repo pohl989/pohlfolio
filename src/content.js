@@ -44,7 +44,7 @@ export const featuredProjects = [
         <strong>React</strong>, <strong>Redux</strong>, & <strong>Rails</strong>. 
         It was a great beta project that utilized
         <strong>Devise</strong> and <strong>React Router</strong> 
-        to manage auth. It was when I first started by love-hate relationship with 
+        to manage auth. It was when I first started my love-hate relationship with 
         redux and the flux pattern. 
         `,
     link: 'https://tablebooking-dpl.herokuapp.com/',
@@ -58,7 +58,7 @@ export const featuredProjects = [
         I created a fun little Flash Card app utilizing <strong>Rails</strong> & <strong>React</strong> 
         with <strong>Semantic UI</strong>.
         It may take a fews seconds to load the cards because the backend is hosted on <strong>Heroku</strong> and
-        I am too cheap to get off the free tier for a toy app. Also don't hold me responsible fot the
+        I am too cheap to get off the free tier for a toy app. Also don't hold me responsible for the
         content of the cards. It is open to the internet and anyone can edit.
     `,
     link: 'https://rails-react-flashcards.herokuapp.com/',
@@ -82,12 +82,12 @@ export const featuredProjects = [
 
 export const aboutMeOne =
     `Hello, I\'m <strong>Ben Pohl</strong>. 
-    I\'m a <strong>fullstack Developer</strong>. I love the problem solving aspect of the job. I love a new challenge whether is it 
+    I\'m a <strong>fullstack Developer</strong>. I love the problem solving aspect of the job. I love a new challenge whether it is 
     on the backend writing a new service, delayed job, or rake task. I also enjoy working on the front end creating 
-    a solid component structure, dyanmic form validations, or creating that perfect transition`
+    a solid component structure, dynamic form validations, or creating that perfect transition`
 
 export const aboutMeTwo =
-    `My current day to day tech stack includes, Ruby on Rails, Vue and React. In my current position I write code for a internal system
+    `My current day to day tech stack includes Ruby on Rails, Vue and React. In my current position I write code for an internal system
     that manages federal contracts, projects, invoices, and members.`
 
 
