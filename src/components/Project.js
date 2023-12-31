@@ -13,39 +13,39 @@ function createMarkup(markup) {
 }
 
 const ProjectImageContainer = styled.div`
-  min-width:300px;
-  max-width: 400px;
-  min-height: 300px;
-  border-top-right-radius: .4em;
-  border-bottom-right-radius: .4em;
-  ${media.tablet`
-      width: 100%;
-      min-width: 100%;
-      border-top-right-radius: .4em;
-      border-top-left-radius: .4em;
-      border-bottom-right-radius: 0em;
+width: 100%;
+min-width: 100%;
+border-top-right-radius: .4em;
+border-top-left-radius: .4em;
+border-bottom-right-radius: 0em;
+${media.tablet`
+min-width:300px;
+max-width: 400px;
+min-height: 300px;
+border-top-right-radius: .4em;
+border-bottom-right-radius: .4em;
     `}
 `
 
 const ProjectImage = styled.img`
-  ${media.tablet`
-    border-top-right-radius: .4em;
-    border-top-left-radius: .4em;
-    border-bottom-right-radius: 0em;
-  `}
   width: 100%;
   height: 100%;
   background-color: rgb(34,34,34);
   box-shadow: ${cardShadow2};
   border-top-right-radius: .4em;
-  border-bottom-right-radius: .4em;
+  border-top-left-radius: .4em;
   object-fit: cover; 
   overflow: hidden;
   object-position: top left;
+  ${media.tablet`
+    border-bottom-right-radius: .4em;
+    border-top-left-radius: 0em;
+    border-bottom-left-radius: 0em;
+  `}
 `
 const NewProjectCardBody = styled.div`
   ${media.tablet`
-      max-width: 100%;
+      max-width: 60%;
     `}
   flex-grow: 1;
   border: none;
@@ -57,13 +57,13 @@ const NewProjectCardBody = styled.div`
   font-size: 1em;
   border-radius: 0;
   text-decoration: none;
-  max-width: 60%;
+  max-width: 100%;
 `
 
 const NewProjectCard = styled.div`  
   ${media.tablet`
-      flex-direction: column;
-    `}
+    flex-direction: row-reverse;
+  `}
   width: 100%;
   border: 5px solid ${colors.pink};
   border-radius: ${borderRadius};
@@ -73,8 +73,9 @@ const NewProjectCard = styled.div`
   color: white;
   box-shadow: ${cardShadow2};
   display: flex;
-  flex-direction: row-reverse;
+  flex-direction: column;
   padding: 0;
+  max-width: 1000px;
   border: 5px solid ${colors.neonGreen};
 `
 

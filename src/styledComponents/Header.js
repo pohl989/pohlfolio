@@ -14,7 +14,7 @@ const fontSize = (size) => {
     case 'small':
       return '4vmin'
     case 'h1':
-      return '10vmin'
+      return '8vmin'
     case 'h2':
       return '8vmin'
     case 'h3':
@@ -47,7 +47,7 @@ const background = (backgroundColor) =>
 
 const subHeader = (sub=false) => {
   if (sub) {
-    return '-15px 0px 15px 0px'
+    return '-10px 0px 15px 0px'
   } else {
     return '15px 0px 5px 0px'
   }
@@ -75,6 +75,7 @@ export default styled.h1`
   font-size: ${(props) => fontSize(props.size)};
   font-family:  ${(props) => font(props.font)}, monospace;
   color: ${(props) => color(props.bColor)};
+  text-wrap: nowrap;
   background-color: ${(props) => background(props.background)};
 
 `

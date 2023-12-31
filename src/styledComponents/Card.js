@@ -29,9 +29,9 @@ export const StyledNameCard = styled.div`
   border-radius: 0.8rem;
   margin: 1.5rem;
   border: 5px solid ${colors.white};
-  min-width: 90%;
+  min-width: 95%;
   ${media.tablet`
-    min-width: 50%;
+    min-width: 70%;
     max-width: 1000px;
     border-width: 6px;
     `}
@@ -40,9 +40,9 @@ export const StyledNameCard = styled.div`
     max-width: 1000px;
     `}
   ${media.giant`
-    min-width: 50%;
+    min-width: 1000px;
     max-width: 1000px;
-    `}
+`}
 `
 
 export const ProjectCard = styled(Card)`
@@ -50,7 +50,6 @@ export const ProjectCard = styled(Card)`
   width: 100%;
   background-color: rgb(34,34,34);
   box-shadow: ${cardShadow2};
-  max-width: 100%;
   position: relative;
   display: flex;
   cursor: pointer;
@@ -77,9 +76,10 @@ export const TextCard = styled(Card)`
   box-sizing: inherit;
   display: flex;
   width: 100%;
-  flex-direction: row;
+  flex-direction: column;
   ${media.tablet`
-    flex-direction: column;
+    flex-direction: row;
+    max-width: 1100px;
   `}
 `
 

@@ -24,9 +24,9 @@ export const Cards = styled.div`
 
 const AboutMe = styled.p`
   margin: 20px; 
-  max-width: 50%;
+  max-width: 100%;
  ${media.tablet`
-    max-width: 100%;
+    max-width: 50%;
   `}
 `
 

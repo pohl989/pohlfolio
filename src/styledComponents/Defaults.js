@@ -24,7 +24,7 @@ export const media = Object.keys(sizes).reduce((accumulator, label) => {
   // changing their browsers font-size: https://zellwk.com/blog/media-query-units/
   // const emSize = sizes[label] / 16
   accumulator[label] = (...args) => css`
-    @media (max-width: ${sizes[label]}px) {
+    @media (min-width: ${sizes[label]}px) {
       ${css(...args)};
     }
   `

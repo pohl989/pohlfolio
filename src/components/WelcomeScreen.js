@@ -30,14 +30,15 @@ const LogoWelcomeBackground = styled.div`
 
 const LogoWelcome = styled.img`
   margin-bottom: 15px;
-  width: 150px;
+  width: 100px;
   height: auto;
   display: block;
   position: relative;
   margin-right: auto;
   margin-left: auto;
+  object-fit: contain;
   ${media.tablet`
-    width: 125px;
+    width: 150px;
   `}
 `
 const ButtonWrapper = styled.div`

@@ -16,8 +16,12 @@ const StyledMenu = styled.nav`
   width: 100%;
   position:sticky;  
   position: -webkit-sticky;
-  top: 0;
-  z-index:1;
+  top: -1px;
+  z-index: 1;
+  height: 60px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
   ${media.tablet`
     height: 70px;
     `
@@ -50,21 +54,23 @@ const StyledLi = styled.li`
   list-style: none;
   padding: 30px 20px;
   align-self: flex-end;
+  display: none;
   ${media.tablet`
     font-size: 12px;
-    display: none;
+    display: inline-flex;
   `
 }
 `
 
 const NavLogo = styled.img`
-  width: 80px;
+  width: 60px;
   display: block; 
   height: auto;
+  object-fit: contain;
   position: relative;
   margin: 2px;
   ${media.tablet`
-    width: 70px;
+    width: 80px;
     `
 }
 `
@@ -97,23 +103,25 @@ class NavBar extends Component {
     const {navHover} = this.state
     return (
       <StyledMenu id="navbar" className="nav-background">
-        <a href="#start" style={{display: 'inline-flex', maxHeight: '60px', marginLeft: '2vw', marginTop: '5px'}}>
-          {this.logoHeader(navHover)}
-        </a>
-        <StyledUL>
-          <StyledLi style={{padding: '0px', marginBottom: '10px'}}/>
-          <StyledLi>
-            <StyledLink href="#start">
-              Projects
-            </StyledLink>
-          </StyledLi>
-          <StyledLi>
-            <StyledLink href="#about" >
-              About Me
-            </StyledLink>
-          </StyledLi>
-        </StyledUL>
-        <div style={{display: 'inline-flex', float: 'right', height: 'auto', paddingRight: '2vw'}}>
+        <div style={{display: 'inline-flex', height: 'auto', paddingLeft: '2vw', fontSize: '3rem'}}>
+          <a href="#start" style={{display: 'inline-flex', maxHeight: '60px', marginLeft: '2vw', marginTop: '5px'}}>
+            {this.logoHeader(navHover)}
+          </a>
+          <StyledUL>
+            <StyledLi style={{padding: '0px', marginBottom: '10px'}}/>
+            <StyledLi>
+              <StyledLink href="#start">
+                Projects
+              </StyledLink>
+            </StyledLi>
+            <StyledLi>
+              <StyledLink href="#about" >
+                About Me
+              </StyledLink>
+            </StyledLi>
+          </StyledUL>
+        </div>
+        <div style={{display: 'inline-flex', float: 'right', height: 'auto', paddingRight: '2vw', fontSize: '3rem'}}>
           <div>
             <a
               target="_blank"
@@ -123,7 +131,6 @@ class NavBar extends Component {
             >
               <MyFontAwesomeIcon
                 icon={['fab', 'github']}
-                size="3x"
                 style={{padding: '15px 5px'}}
                 onMouseEnter={this.githubHover} />
             </a>
@@ -135,7 +142,7 @@ class NavBar extends Component {
               href="https://www.linkedin.com/in/pohl989/"
               style={{textDecoration: 'none', display: 'flex', alignItems: 'center', flexGrow: '1', maxWidth: '400px'}}
             >
-              <MyFontAwesomeIcon icon={['fab', 'linkedin']} size="3x" />
+              <MyFontAwesomeIcon icon={['fab', 'linkedin']} />
             </a>
           </div>
         </div>
